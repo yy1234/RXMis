@@ -39,5 +39,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    }
 
 
+    //跳转到引导界面
+    func toGuide()  {
+        //获取到main.storyBoard
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+    //实例化控制器
+        let guildController = mainStoryBoard.instantiateViewController(identifier: "Guide")
+        window?.rootViewController = guildController
+    }
 }
 
