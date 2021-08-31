@@ -1,0 +1,22 @@
+{
+  "name": "DesignKit",
+  "version": "0.1.0",
+  "summary": "A short description of DesignKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/270089758@qq.com/DesignKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "270089758@qq.com": "270089758@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/270089758@qq.com/DesignKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DesignKit/Classes/**/*"
+}
