@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
         Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
             #endif
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-        let nav = UINavigationController.init(rootViewController: ExampleListViewController())
-        window?.rootViewController = nav
-        window?.makeKeyAndVisible()
+//        window = UIWindow.init(frame: UIScreen.main.bounds)
+//        window?.backgroundColor = .white
+//        let nav = UINavigationController.init(rootViewController: ExampleListViewController())
+//        window?.rootViewController = nav
+//        window?.makeKeyAndVisible()
         return true
     }
 

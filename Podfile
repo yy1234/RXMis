@@ -6,7 +6,7 @@ target 'RXMis' do
   use_frameworks!
 
   # Pods for RXMis
-  pod 'SwiftLint', '= 0.41.0', configurations: ['Debug']
+  #pod 'SwiftLint', '= 0.41.0', configurations: ['Debug']
   pod 'DesignKit', :path => './Frameworks/DesignKit', :inhibit_warnings => false
   pod 'Reveal-SDK', '~> 24', :configurations => ['Debug']
   pod 'YogaKit', '~> 1.18.1'

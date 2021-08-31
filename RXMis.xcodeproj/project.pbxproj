@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A048276CE9A05E37C83A955F /* Pods_RXMis_RXMisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB4EB70F9E1ABBE2A110540 /* Pods_RXMis_RXMisUITests.framework */; };
 		C3B4278369A6E9B53CAF8BD4 /* Pods_RXMis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2FE807B6CCEB6DEF9BA83D /* Pods_RXMis.framework */; };
+		DD7A3AAC26DE682000D30627 /* Mian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7A3AAB26DE682000D30627 /* Mian.storyboard */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		8DC6BE8E02B3EC08FF5F5714 /* Pods-RXMis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXMis.debug.xcconfig"; path = "Target Support Files/Pods-RXMis/Pods-RXMis.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2BC8AECBCA052C19273BF9 /* Pods-RXMisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXMisTests.debug.xcconfig"; path = "Target Support Files/Pods-RXMisTests/Pods-RXMisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB4EB70F9E1ABBE2A110540 /* Pods_RXMis_RXMisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXMis_RXMisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7A3AAB26DE682000D30627 /* Mian.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mian.storyboard; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				DDBBACE326B9772B008A7DBB /* Assets.xcassets */,
 				DDBBACE526B9772B008A7DBB /* LaunchScreen.storyboard */,
 				DDBBACE826B9772B008A7DBB /* Info.plist */,
+				DD7A3AAB26DE682000D30627 /* Mian.storyboard */,
 			);
 			path = RXMis;
 			sourceTree = "<group>";
@@ -261,7 +264,6 @@
 				DDBBACD326B97727008A7DBB /* Sources */,
 				DDBBACD426B97727008A7DBB /* Frameworks */,
 				DDBBACD526B97727008A7DBB /* Resources */,
-				DDBBAD4926BA6A40008A7DBB /* Run Swiftlint */,
 				04E94B42F3FDD8E6C204160A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -372,6 +374,7 @@
 				DDBBAD3A26B97B18008A7DBB /* BaseProject.xcconfig in Resources */,
 				DDBBAD4326B97B26008A7DBB /* InternalTarget.xcconfig in Resources */,
 				DDBBAD3326B97B09008A7DBB /* BaseConfigurations.xcconfig in Resources */,
+				DD7A3AAC26DE682000D30627 /* Mian.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,24 +494,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		DDBBAD4926BA6A40008A7DBB /* Run Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Swiftlint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

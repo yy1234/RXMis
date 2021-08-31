@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbY-IR-h4f" userLabel="Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="ybX-HZ-mQX">
+                                        <rect key="frame" x="169.5" y="100" width="75" height="309"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="na4-lV-WCj"/>
+                                            <constraint firstAttribute="height" constant="309" id="ojS-Ov-LIu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lx+Hwv4pssh7iWlbE+X8+slaeC2Cp9SN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBo-qC-QAh">
+                                        <rect key="frame" x="95.5" y="795" width="223" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0cI-AO-des">
+                                        <rect key="frame" x="113" y="745" width="188" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="188" id="BRF-I5-SdC"/>
+                                            <constraint firstAttribute="height" constant="30" id="a8Z-DO-VVH"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hm1-hA-fPT"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="zq6-mh-IBf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8QU-jw-hA1">
+                                        <rect key="frame" x="197" y="705" width="20" height="20"/>
+                                        <color key="color" systemColor="systemPinkColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ybX-HZ-mQX" firstAttribute="top" secondItem="dbY-IR-h4f" secondAttribute="top" constant="100" id="6j8-45-mCB"/>
+                                    <constraint firstItem="sBo-qC-QAh" firstAttribute="top" secondItem="0cI-AO-des" secondAttribute="bottom" constant="20" id="KaR-2b-UF0"/>
+                                    <constraint firstItem="sBo-qC-QAh" firstAttribute="centerX" secondItem="dbY-IR-h4f" secondAttribute="centerX" id="Nfh-eT-SM3"/>
+                                    <constraint firstItem="8QU-jw-hA1" firstAttribute="centerX" secondItem="dbY-IR-h4f" secondAttribute="centerX" id="Pe0-tc-pYO"/>
+                                    <constraint firstItem="ybX-HZ-mQX" firstAttribute="centerX" secondItem="dbY-IR-h4f" secondAttribute="centerX" id="ZSg-96-rjK"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBo-qC-QAh" secondAttribute="bottom" constant="8.6666666666666288" id="afr-Ka-CGp"/>
+                                    <constraint firstItem="0cI-AO-des" firstAttribute="centerX" secondItem="dbY-IR-h4f" secondAttribute="centerX" id="kTr-LU-p71"/>
+                                    <constraint firstItem="0cI-AO-des" firstAttribute="top" secondItem="8QU-jw-hA1" secondAttribute="bottom" constant="20" id="lCe-qj-5eE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dbY-IR-h4f" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="0rv-bw-76s"/>
+                            <constraint firstItem="dbY-IR-h4f" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OFj-uI-JTz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dbY-IR-h4f" secondAttribute="trailing" id="c6L-T0-q4f"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dbY-IR-h4f" secondAttribute="bottom" id="f4E-yc-c5q"/>
+                            <constraint firstItem="dbY-IR-h4f" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mPy-xF-RO6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashBanner" width="74.666664123535156" height="309"/>
+        <image name="SplashLogo" width="188" height="31.666666030883789"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

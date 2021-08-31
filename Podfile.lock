@@ -2,7 +2,6 @@ PODS:
   - DesignKit (0.1.0)
   - Reveal-SDK (24)
   - SnapKit (5.0.1)
-  - SwiftLint (0.41.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -11,14 +10,12 @@ DEPENDENCIES:
   - DesignKit (from `./Frameworks/DesignKit`)
   - Reveal-SDK (~> 24)
   - SnapKit (~> 5.0.0)
-  - SwiftLint (= 0.41.0)
   - YogaKit (~> 1.18.1)
 
 SPEC REPOS:
   trunk:
     - Reveal-SDK
     - SnapKit
-    - SwiftLint
     - Yoga
     - YogaKit
 
@@ -30,10 +27,9 @@ SPEC CHECKSUMS:
   DesignKit: 52b474f52353f04a2cb149f87832994bc88e8bb5
   Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 808b44fbffb087e128ab39a0687f9345c5f7839e
+PODFILE CHECKSUM: cb1ad80ae3a1e4d84181f7c5d0d798aa9fb7dd47
 
 COCOAPODS: 1.10.0
