@@ -85,10 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="vb4-eN-bv5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xVR-0Z-mFZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qa-2A-mDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="919"/>
+            <point key="canvasLocation" x="444.92753623188412" y="918.75"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="FKx-F1-jY9">
@@ -193,6 +194,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTa-gB-QVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400.00000000000006" y="47.544642857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JVT-sU-wHb">
+            <objects>
+                <navigationController storyboardIdentifier="LoginOrRegisterNavigation" automaticallyAdjustsScrollViewInsets="NO" id="PjV-K5-1Qj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qMZ-ZF-70V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X1X-no-Az8" kind="relationship" relationship="rootViewController" id="Hoh-Yf-p9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rG-2n-mxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465.21739130434787" y="918.75"/>
         </scene>
     </scenes>
     <resources>

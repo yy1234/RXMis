@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let loginOrRegister = mainStoryBoard.instantiateViewController(identifier: "LoginOrRegister")
 //
 //        window?.rootViewController = loginOrRegister
-        setRootController(name: "LoginOrRegister")
+        setRootController(name: "LoginOrRegisterNavigation")
 
     }
     
