@@ -30,6 +30,8 @@ class GuideController: UIViewController {
         bannerView.placeholderImage = UIImage.init(named: IMAGE_PLACE_HOLDER)
         bannerView.bannerViewSelectorString = "sd_setImageWithURL:placeholderImage:"
         //指示器
+        bannerView.pageControlAliment = .center
+        bannerView.pageControlBottomMargin = 90
         bannerView.pageControlNormalColor = UIColor(hex: COLOR_LIGHT_GRAY)
         bannerView.pageControlHighlightColor = UIColor(hex: COLOR_PRIMARY)
         bannerView.autoScroll = false

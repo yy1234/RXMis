@@ -32,33 +32,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return UIApplication.shared.delegate as!AppDelegate
         }
     }
+    
+    func setRootController(name: String){
+        //获取到main.storyBoard
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = mainStoryBoard.instantiateViewController(identifier: name)
+        window?.rootViewController = controller
+
+    }
 
     //跳转到引导界面
     func toGuide()  {
-        //获取到main.storyBoard
-        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        
-    //实例化控制器
-        let guildController = mainStoryBoard.instantiateViewController(identifier: "Guide")
-        window?.rootViewController = guildController
+    
+        setRootController(name: "Guide")
     }
     
     func toLoginOrRegister() {
         //获取到main.storyBoard
-        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        
-    //实例化控制器
-        let loginOrRegister = mainStoryBoard.instantiateViewController(identifier: "LoginOrRegister")
-        window?.rootViewController = loginOrRegister
+//        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//
+//    //实例化控制器
+//        let loginOrRegister = mainStoryBoard.instantiateViewController(identifier: "LoginOrRegister")
+//
+//        window?.rootViewController = loginOrRegister
+        setRootController(name: "LoginOrRegister")
+
     }
     
     func toHome() {
         //获取到main.storyBoard
-        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//
+//    //实例化控制器
+//        let homeViewController = mainStoryBoard.instantiateViewController(identifier: "Home")
+//        window?.rootViewController = homeViewController
         
-    //实例化控制器
-        let homeViewController = mainStoryBoard.instantiateViewController(identifier: "Home")
-        window?.rootViewController = homeViewController
+        setRootController(name: "Home")
+
     }
 }
 
