@@ -11,14 +11,30 @@ class GuideController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initBanner()
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var bannerView: YJBannerView!
     @IBOutlet weak var fotter: UIView!
     @IBOutlet weak var btLoginORRegister: UIButton!
 
     @IBOutlet weak var btEnter: UIButton!
     
+    
+    func initBanner() {
+        bannerView.delegate = self
+        bannerView.dataSource = self
+        
+        bannerView.emptyImage = UIImage.init(named: IMAGE_PLACE_HOLDER)
+        bannerView.placeholderImage = UIImage.init(named: IMAGE_PLACE_HOLDER)
+        bannerView.bannerViewSelectorString = "sd_setImageWithURL:placeholderImage:"
+        //指示器
+        bannerView.pageControlNormalColor = UIColor(hex: COLOR_LIGHT_GRAY)
+        bannerView.pageControlHighlightColor = UIColor(hex: COLOR_PRIMARY)
+        bannerView.autoScroll = false
+        bannerView.reloadData()
+    }
     //当布局完成后，调用的方法
     override func viewDidLayoutSubviews() {
         let width: CGFloat = CGFloat(SIZE_BUTTON_ENTER_WIDTH)
@@ -68,4 +84,20 @@ class GuideController: UIViewController {
     }
     */
 
+}
+
+
+extension GuideController:YJBannerViewDelegate,YJBannerViewDataSource {
+    
+    func bannerViewImages(_ bannerView: YJBannerView!) -> [Any]! {
+        return ["Guide1","Guide2","Guide3","Guide4","Guide5"]
+    }
+    //自定义celll
+    func bannerView(_ bannerView: YJBannerView!, customCell: UICollectionViewCell!, index: Int) -> UICollectionViewCell! {
+        let cell = customCell as! YJBannerViewCell
+        cell.showImageViewContentMode = .scaleAspectFill
+        return cell
+    }
+    
+    
 }

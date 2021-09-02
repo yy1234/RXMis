@@ -23,4 +23,9 @@ let SIZE_BORDER = 1.0
 //MARK:颜色
 //程序的主色调
 let COLOR_PRIMARY = 0xdd0000
+//灰色
+let COLOR_LIGHT_GRAY = 0xaaaaaa
 
+
+//占位图
+let IMAGE_PLACE_HOLDER = "PlaceHolder"

@@ -125,7 +125,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31s-be-Zhi" userLabel="Container">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rir-IP-cOw" userLabel="Header">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rir-IP-cOw" userLabel="Header" customClass="YJBannerView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </view>
@@ -184,6 +184,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="rir-IP-cOw" id="MZe-eE-GY0"/>
                         <outlet property="btEnter" destination="tSQ-3Q-qV4" id="du8-39-vbi"/>
                         <outlet property="btLoginORRegister" destination="9uN-4A-2wV" id="QxC-1z-IJY"/>
                         <outlet property="fotter" destination="mRF-JX-0MF" id="ECh-yl-2bv"/>
