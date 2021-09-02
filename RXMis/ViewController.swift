@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
     func setUpUI() {
         view.backgroundColor = .brown
-
+    
         
         stackView.axis = .horizontal
         stackView.alignment = .center

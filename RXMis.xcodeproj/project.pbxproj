@@ -21,6 +21,15 @@
 		DD7A3ABE26DF6E1500D30627 /* ColorExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ABD26DF6E1500D30627 /* ColorExtend.swift */; };
 		DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AC126E0655200D30627 /* LoginOrRegisterController.swift */; };
 		DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AC326E0711B00D30627 /* HomeController.swift */; };
+		DD7A3AE126E079B100D30627 /* UIView+YJBannerViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ACC26E079B100D30627 /* UIView+YJBannerViewExt.m */; };
+		DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ACE26E079B100D30627 /* YJBannerView.m */; };
+		DD7A3AE326E079B100D30627 /* YJHollowPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AD226E079B100D30627 /* YJHollowPageControl.m */; };
+		DD7A3AE426E079B100D30627 /* YJAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AD326E079B100D30627 /* YJAbstractDotView.m */; };
+		DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AD426E079B100D30627 /* YJAnimatedDotView.m */; };
+		DD7A3AE626E079B100D30627 /* YJBannerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD7A3AD926E079B100D30627 /* YJBannerView.bundle */; };
+		DD7A3AE726E079B100D30627 /* YJBannerViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADB26E079B100D30627 /* YJBannerViewCollectionView.m */; };
+		DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADC26E079B100D30627 /* YJBannerViewCell.m */; };
+		DD7A3AE926E079B100D30627 /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADF26E079B100D30627 /* YJBannerViewFooter.m */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -84,6 +93,23 @@
 		DD7A3AC126E0655200D30627 /* LoginOrRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterController.swift; sourceTree = "<group>"; };
 		DD7A3AC326E0711B00D30627 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DD7A3AC526E074C300D30627 /* RXMis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RXMis-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD7A3ACC26E079B100D30627 /* UIView+YJBannerViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJBannerViewExt.m"; sourceTree = "<group>"; };
+		DD7A3ACD26E079B100D30627 /* UIView+YJBannerViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJBannerViewExt.h"; sourceTree = "<group>"; };
+		DD7A3ACE26E079B100D30627 /* YJBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerView.m; sourceTree = "<group>"; };
+		DD7A3AD126E079B100D30627 /* YJAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAnimatedDotView.h; sourceTree = "<group>"; };
+		DD7A3AD226E079B100D30627 /* YJHollowPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHollowPageControl.m; sourceTree = "<group>"; };
+		DD7A3AD326E079B100D30627 /* YJAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAbstractDotView.m; sourceTree = "<group>"; };
+		DD7A3AD426E079B100D30627 /* YJAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAnimatedDotView.m; sourceTree = "<group>"; };
+		DD7A3AD526E079B100D30627 /* YJHollowPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHollowPageControl.h; sourceTree = "<group>"; };
+		DD7A3AD626E079B100D30627 /* YJAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAbstractDotView.h; sourceTree = "<group>"; };
+		DD7A3AD726E079B100D30627 /* YJBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerView.h; sourceTree = "<group>"; };
+		DD7A3AD926E079B100D30627 /* YJBannerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YJBannerView.bundle; sourceTree = "<group>"; };
+		DD7A3ADB26E079B100D30627 /* YJBannerViewCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewCollectionView.m; sourceTree = "<group>"; };
+		DD7A3ADC26E079B100D30627 /* YJBannerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewCell.m; sourceTree = "<group>"; };
+		DD7A3ADD26E079B100D30627 /* YJBannerViewFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewFooter.h; sourceTree = "<group>"; };
+		DD7A3ADE26E079B100D30627 /* YJBannerViewCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCollectionView.h; sourceTree = "<group>"; };
+		DD7A3ADF26E079B100D30627 /* YJBannerViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewFooter.m; sourceTree = "<group>"; };
+		DD7A3AE026E079B100D30627 /* YJBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCell.h; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +223,78 @@
 			path = Extend;
 			sourceTree = "<group>";
 		};
+		DD7A3AC926E0797F00D30627 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3ACA26E079B100D30627 /* YJBannerView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		DD7A3ACA26E079B100D30627 /* YJBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3ACB26E079B100D30627 /* Tools */,
+				DD7A3ACE26E079B100D30627 /* YJBannerView.m */,
+				DD7A3ACF26E079B100D30627 /* PageControls */,
+				DD7A3AD726E079B100D30627 /* YJBannerView.h */,
+				DD7A3AD826E079B100D30627 /* Resource */,
+				DD7A3ADA26E079B100D30627 /* Views */,
+			);
+			path = YJBannerView;
+			sourceTree = "<group>";
+		};
+		DD7A3ACB26E079B100D30627 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3ACC26E079B100D30627 /* UIView+YJBannerViewExt.m */,
+				DD7A3ACD26E079B100D30627 /* UIView+YJBannerViewExt.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DD7A3ACF26E079B100D30627 /* PageControls */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3AD026E079B100D30627 /* YJHollowPageControl */,
+			);
+			path = PageControls;
+			sourceTree = "<group>";
+		};
+		DD7A3AD026E079B100D30627 /* YJHollowPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3AD126E079B100D30627 /* YJAnimatedDotView.h */,
+				DD7A3AD226E079B100D30627 /* YJHollowPageControl.m */,
+				DD7A3AD326E079B100D30627 /* YJAbstractDotView.m */,
+				DD7A3AD426E079B100D30627 /* YJAnimatedDotView.m */,
+				DD7A3AD526E079B100D30627 /* YJHollowPageControl.h */,
+				DD7A3AD626E079B100D30627 /* YJAbstractDotView.h */,
+			);
+			path = YJHollowPageControl;
+			sourceTree = "<group>";
+		};
+		DD7A3AD826E079B100D30627 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3AD926E079B100D30627 /* YJBannerView.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DD7A3ADA26E079B100D30627 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3ADB26E079B100D30627 /* YJBannerViewCollectionView.m */,
+				DD7A3ADC26E079B100D30627 /* YJBannerViewCell.m */,
+				DD7A3ADD26E079B100D30627 /* YJBannerViewFooter.h */,
+				DD7A3ADE26E079B100D30627 /* YJBannerViewCollectionView.h */,
+				DD7A3ADF26E079B100D30627 /* YJBannerViewFooter.m */,
+				DD7A3AE026E079B100D30627 /* YJBannerViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DDBBACCE26B97727008A7DBB = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +320,7 @@
 		DDBBACD926B97727008A7DBB /* RXMis */ = {
 			isa = PBXGroup;
 			children = (
+				DD7A3AC926E0797F00D30627 /* Vender */,
 				DD7A3ABA26DF29FE00D30627 /* Extend */,
 				DD7A3AB426DF250100D30627 /* Util */,
 				DD7A3AAD26DE781C00D30627 /* Controller */,
@@ -419,6 +518,7 @@
 				DDBBAD3C26B97B18008A7DBB /* InternalProject.xcconfig in Resources */,
 				DDBBAD3926B97B18008A7DBB /* AppStoreProject.xcconfig in Resources */,
 				DDBBAD4126B97B26008A7DBB /* BaseTarget.xcconfig in Resources */,
+				DD7A3AE626E079B100D30627 /* YJBannerView.bundle in Resources */,
 				DDBBAD3226B97B09008A7DBB /* CompilerAndLanguage.xcconfig in Resources */,
 				DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */,
 				DDBBAD3B26B97B18008A7DBB /* DebugProject.xcconfig in Resources */,
@@ -556,17 +656,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7A3AE726E079B100D30627 /* YJBannerViewCollectionView.m in Sources */,
+				DD7A3AE126E079B100D30627 /* UIView+YJBannerViewExt.m in Sources */,
+				DD7A3AE426E079B100D30627 /* YJAbstractDotView.m in Sources */,
 				DD7A3AAF26DE788E00D30627 /* SplashController.swift in Sources */,
+				DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */,
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
+				DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */,
 				DD7A3AB926DF287000D30627 /* ViewUtil.swift in Sources */,
 				DDF33D7D26CA943C00B3DB19 /* ExampleListViewController.swift in Sources */,
 				DD7A3AB226DE7B8400D30627 /* GuideController.swift in Sources */,
 				DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */,
 				DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */,
+				DD7A3AE926E079B100D30627 /* YJBannerViewFooter.m in Sources */,
 				DD7A3ABC26DF2A1100D30627 /* ViewExtend.swift in Sources */,
 				DD7A3ABE26DF6E1500D30627 /* ColorExtend.swift in Sources */,
+				DD7A3AE326E079B100D30627 /* YJHollowPageControl.m in Sources */,
 				DD7A3AB626DF252600D30627 /* Constant.swift in Sources */,
+				DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
