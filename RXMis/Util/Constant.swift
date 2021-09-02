@@ -18,3 +18,9 @@ let SIZR_LARGER_RADIUS = SIZE_BUTTON_ENTER_HEIGTH / 2
 
 //边框的宽度
 let SIZE_BORDER = 1.0
+
+
+//MARK:颜色
+//程序的主色调
+let COLOR_PRIMARY = 0xdd0000
+

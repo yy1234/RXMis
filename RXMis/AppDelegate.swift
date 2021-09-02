@@ -42,5 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let guildController = mainStoryBoard.instantiateViewController(identifier: "Guide")
         window?.rootViewController = guildController
     }
+    
+    func toLoginOrRegister() {
+        //获取到main.storyBoard
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+    //实例化控制器
+        let loginOrRegister = mainStoryBoard.instantiateViewController(identifier: "LoginOrRegister")
+        window?.rootViewController = loginOrRegister
+    }
 }
 

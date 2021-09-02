@@ -16,7 +16,6 @@ class SplashController: UIViewController {
         }
     }
     
-    
     func next()  {
         print("SplashController next")
 //        let appDelegate = UIApplication.shared.delegate as! AppDelegate

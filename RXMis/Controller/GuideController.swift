@@ -41,10 +41,21 @@ class GuideController: UIViewController {
 
         btEnter.showColorPrimaryBorder()
         
+        
 //        btEnter.layer.borderColor = UIColor(red: 211/255, green: 0, blue: 0, alpha: 1.0).cgColor
 //        btEnter.layer.borderWidth = 1
     }
-
+//MARK:事件
+    @IBAction func onLoginOrRegisterClick(_ sender: UIButton) {
+        print("GuideController onLoginOrRegisterClick")
+        AppDelegate.sharde.toLoginOrRegister()
+    }
+    
+    
+    
+    @IBAction func onEnterClick(_ sender: UIButton) {
+        print("GuideController onEnterClick")
+    }
     /*
     // MARK: - Navigation
 

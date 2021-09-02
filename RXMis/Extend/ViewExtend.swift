@@ -12,6 +12,6 @@ extension UIView {
     //显示
     func showColorPrimaryBorder() {
         self.layer.borderWidth = CGFloat(SIZE_BORDER)
-        self.layer.borderColor = UIColor(red: 211.0/255.0, green: 0, blue: 0, alpha: 1.0).cgColor
+        self.layer.borderColor = UIColor(hex: COLOR_PRIMARY).cgColor
     }
 }
