@@ -184,6 +184,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xVR-0Z-mFZ"/>
+                    <connections>
+                        <outlet property="btLogin" destination="ujM-aF-Xxv" id="f35-nD-YnT"/>
+                        <outlet property="btRegister" destination="KhX-0Y-8r3" id="DZw-B1-83n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qa-2A-mDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

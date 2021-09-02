@@ -8,10 +8,18 @@
 import UIKit
 
 class LoginOrRegisterController: UIViewController {
-
+    @IBOutlet weak var btLogin: UIButton!
+    @IBOutlet weak var btRegister: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //圆角
+        ViewUtil.showLargerRadius(view: btLogin)
+        ViewUtil.showLargerRadius(view: btRegister)
+        
+        //边框
+        btLogin.showColorPrimaryBorder()
+        btRegister.showColorPrimaryBorder()
         // Do any additional setup after loading the view.
     }
     
