@@ -82,8 +82,106 @@
                     <view key="view" contentMode="scaleToFill" id="0q5-m7-9fV" customClass="login" customModule="LoginOrRegister">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLS-Ei-r8O">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5gY-3K-uka">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbQ-Lx-SlG" userLabel="Header">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gF7-PE-QPr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Pql-Tm-FoV">
+                                                        <rect key="frame" x="169" y="155.5" width="76" height="76"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="76" id="0xw-1z-7fk"/>
+                                                            <constraint firstAttribute="height" constant="76" id="9Xs-bh-q4L"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Pql-Tm-FoV" firstAttribute="centerX" secondItem="EbQ-Lx-SlG" secondAttribute="centerX" id="2RS-MK-Tyu"/>
+                                                    <constraint firstItem="Pql-Tm-FoV" firstAttribute="centerY" secondItem="EbQ-Lx-SlG" secondAttribute="centerY" id="8ME-gy-BmF"/>
+                                                    <constraint firstItem="gF7-PE-QPr" firstAttribute="leading" secondItem="EbQ-Lx-SlG" secondAttribute="leading" id="HFi-K7-7hh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gF7-PE-QPr" secondAttribute="bottom" id="Lr2-zs-hfK"/>
+                                                    <constraint firstItem="gF7-PE-QPr" firstAttribute="top" secondItem="EbQ-Lx-SlG" secondAttribute="top" id="hmJ-7k-ndx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gF7-PE-QPr" secondAttribute="trailing" id="urk-Wj-b44"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-8R-9Fi" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IP4-AQ-zhC">
+                                                        <rect key="frame" x="30" y="0.0" width="354" height="387"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujM-aF-Xxv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="Gaa-z0-RAS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" title="登录">
+                                                                    <color key="titleColor" name="PrimaryColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhX-0Y-8r3">
+                                                                <rect key="frame" x="0.0" y="64" width="354" height="44"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="G0C-55-c9C"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.86666666670000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="注册">
+                                                                    <color key="titleColor" name="PrimaryColor"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c2-cL-kqi">
+                                                                <rect key="frame" x="0.0" y="128" width="354" height="259"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IP4-AQ-zhC" firstAttribute="top" secondItem="rbF-8R-9Fi" secondAttribute="top" id="0Ka-qM-EUo"/>
+                                                    <constraint firstItem="IP4-AQ-zhC" firstAttribute="leading" secondItem="rbF-8R-9Fi" secondAttribute="leading" constant="30" id="Nxf-sw-3dO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IP4-AQ-zhC" secondAttribute="bottom" id="iAb-Hq-liz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IP4-AQ-zhC" secondAttribute="trailing" constant="30" id="rvD-hK-NvT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5gY-3K-uka" firstAttribute="top" secondItem="GLS-Ei-r8O" secondAttribute="top" id="I1E-C2-MLg"/>
+                                    <constraint firstAttribute="trailing" secondItem="5gY-3K-uka" secondAttribute="trailing" id="JMS-38-zuN"/>
+                                    <constraint firstItem="5gY-3K-uka" firstAttribute="leading" secondItem="GLS-Ei-r8O" secondAttribute="leading" id="Sru-eS-xCP"/>
+                                    <constraint firstAttribute="bottom" secondItem="5gY-3K-uka" secondAttribute="bottom" id="eAR-rM-X2Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vb4-eN-bv5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GLS-Ei-r8O" firstAttribute="leading" secondItem="vb4-eN-bv5" secondAttribute="leading" id="Tju-WV-DEO"/>
+                            <constraint firstItem="vb4-eN-bv5" firstAttribute="trailing" secondItem="GLS-Ei-r8O" secondAttribute="trailing" id="YcE-VU-0Eb"/>
+                            <constraint firstItem="vb4-eN-bv5" firstAttribute="bottom" secondItem="GLS-Ei-r8O" secondAttribute="bottom" id="eyL-ko-bNr"/>
+                            <constraint firstItem="GLS-Ei-r8O" firstAttribute="top" secondItem="vb4-eN-bv5" secondAttribute="top" id="iIy-JU-nnL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xVR-0Z-mFZ"/>
                 </viewController>
@@ -215,6 +313,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LoginBackground" width="180" height="186.66667175292969"/>
+        <image name="LoginLogo" width="60" height="60"/>
         <image name="SplashBanner" width="74.666664123535156" height="309"/>
         <image name="SplashLogo" width="188" height="31.666666030883789"/>
         <namedColor name="PrimaryColor">
