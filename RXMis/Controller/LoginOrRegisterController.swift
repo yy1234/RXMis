@@ -11,6 +11,14 @@ class LoginOrRegisterController: UIViewController {
     @IBOutlet weak var btLogin: UIButton!
     @IBOutlet weak var btRegister: UIButton!
     
+    //按下
+    @IBAction func touchDown(_ sender: UIButton) {
+        sender.backgroundColor = UIColor(hex: COLOR_PRIMARY)
+    }
+    //抬起
+    @IBAction func touchUp(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.white
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //圆角
