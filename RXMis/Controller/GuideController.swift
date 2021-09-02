@@ -67,6 +67,8 @@ class GuideController: UIViewController {
     @IBAction func onLoginOrRegisterClick(_ sender: UIButton) {
         print("GuideController onLoginOrRegisterClick")
         AppDelegate.sharde.toLoginOrRegister()
+        setShowGuide()
+
     }
     
     
@@ -74,7 +76,13 @@ class GuideController: UIViewController {
     @IBAction func onEnterClick(_ sender: UIButton) {
         print("GuideController onEnterClick")
         AppDelegate.sharde.toHome()
-
+        setShowGuide()
+    }
+    
+    //设置不显示引导引导界面
+    func setShowGuide()  {
+        PreferenceUtil.setShowGuide(isShowGuide: true)
+    
     }
     /*
     // MARK: - Navigation

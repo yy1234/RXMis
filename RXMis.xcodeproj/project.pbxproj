@@ -30,6 +30,7 @@
 		DD7A3AE726E079B100D30627 /* YJBannerViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADB26E079B100D30627 /* YJBannerViewCollectionView.m */; };
 		DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADC26E079B100D30627 /* YJBannerViewCell.m */; };
 		DD7A3AE926E079B100D30627 /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3ADF26E079B100D30627 /* YJBannerViewFooter.m */; };
+		DD7A3AEB26E0BDDC00D30627 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -110,6 +111,7 @@
 		DD7A3ADE26E079B100D30627 /* YJBannerViewCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCollectionView.h; sourceTree = "<group>"; };
 		DD7A3ADF26E079B100D30627 /* YJBannerViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewFooter.m; sourceTree = "<group>"; };
 		DD7A3AE026E079B100D30627 /* YJBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCell.h; sourceTree = "<group>"; };
+		DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtil.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				DD7A3AB526DF252600D30627 /* Constant.swift */,
 				DD7A3AB826DF287000D30627 /* ViewUtil.swift */,
+				DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
 				DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */,
+				DD7A3AEB26E0BDDC00D30627 /* PreferenceUtil.swift in Sources */,
 				DD7A3AB926DF287000D30627 /* ViewUtil.swift in Sources */,
 				DDF33D7D26CA943C00B3DB19 /* ExampleListViewController.swift in Sources */,
 				DD7A3AB226DE7B8400D30627 /* GuideController.swift in Sources */,

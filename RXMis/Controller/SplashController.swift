@@ -20,7 +20,11 @@ class SplashController: UIViewController {
         print("SplashController next")
 //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //        appDelegate.toGuide()
-        AppDelegate.sharde.toGuide()
+        if PreferenceUtil.isShowGuide() {
+            AppDelegate.sharde.toGuide()
+        }else{
+            AppDelegate.sharde.toLoginOrRegister()
+        }
     }
 
     /*
