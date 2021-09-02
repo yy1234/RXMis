@@ -133,6 +133,7 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
+                                                                    <action selector="tochUpOutSide:" destination="X1X-no-Az8" eventType="touchUpOutside" id="Xa6-XP-5TA"/>
                                                                     <action selector="touchDown:" destination="X1X-no-Az8" eventType="touchDown" id="cft-h6-NEC"/>
                                                                     <action selector="touchUp:" destination="X1X-no-Az8" eventType="touchUpInside" id="JmG-2e-KIl"/>
                                                                 </connections>
@@ -151,6 +152,7 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
+                                                                    <action selector="tochUpOutSide:" destination="X1X-no-Az8" eventType="touchUpOutside" id="Hcf-HL-hJA"/>
                                                                     <action selector="touchDown:" destination="X1X-no-Az8" eventType="touchDown" id="LDk-A8-DaQ"/>
                                                                     <action selector="touchUp:" destination="X1X-no-Az8" eventType="touchUpInside" id="5bA-oe-otx"/>
                                                                 </connections>
