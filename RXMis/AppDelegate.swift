@@ -51,5 +51,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let loginOrRegister = mainStoryBoard.instantiateViewController(identifier: "LoginOrRegister")
         window?.rootViewController = loginOrRegister
     }
+    
+    func toHome() {
+        //获取到main.storyBoard
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+    //实例化控制器
+        let homeViewController = mainStoryBoard.instantiateViewController(identifier: "Home")
+        window?.rootViewController = homeViewController
+    }
 }
 

@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-RXMis-RXMisUITests/Pods-RXMis-RXMisUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DesignKit/DesignKit.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${PODS_ROOT}/Reveal-SDK/RevealServer/iOS/RevealServer.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework

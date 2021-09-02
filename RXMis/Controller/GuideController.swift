@@ -55,6 +55,8 @@ class GuideController: UIViewController {
     
     @IBAction func onEnterClick(_ sender: UIButton) {
         print("GuideController onEnterClick")
+        AppDelegate.sharde.toHome()
+
     }
     /*
     // MARK: - Navigation

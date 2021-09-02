@@ -11,7 +11,8 @@ target 'RXMis' do
   pod 'Reveal-SDK', '~> 24', :configurations => ['Debug']
   pod 'YogaKit', '~> 1.18.1'
   pod 'SnapKit', '~> 5.0.0'
-
+  #https://github.com/jdg/MBProgressHUD
+  pod 'MBProgressHUD', '~> 1.1.0'
   target 'RXMisTests' do
     inherit! :search_paths
     # Pods for testing
