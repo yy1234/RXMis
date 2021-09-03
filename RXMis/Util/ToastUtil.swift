@@ -31,7 +31,7 @@ class ToastUtil {
     static func showLoading(_ message:String = "拼命加载中."){
          hud = MBProgressHUD.showAdded(to:AppDelegate.sharde.window!.rootViewController!.view, animated: true)
         //设置菊花颜色
-//        hud!.activityIndicatorColor = UIColor.white
+        hud!.activityIndicatorColor = UIColor.white
         
         UIActivityIndicatorView.appearance(whenContainedInInstancesOf: [MBProgressHUD.self]).color = .white
         //设置背景模糊
@@ -43,7 +43,8 @@ class ToastUtil {
         hud!.bezelView.color = UIColor.black
         //细节文字
         hud!.detailsLabel.text = message
-        //细节文字颜色 hud!.detailsLabel.textColor=UIColor.white
+        //细节文字颜色
+        hud!.detailsLabel.textColor=UIColor.white
         //显示
         hud!.show(animated: true)
         

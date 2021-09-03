@@ -15,10 +15,9 @@ extension String {
     /// - Returns: <#return value description#>
     func isPhone() -> Bool {
         //使用谓词
-//        let predicate=NSPredicate(format: "SELF MATCHES %@", REGX_PHONE)
-//
-//        return predicate.evaluate(with: self)
-        return false
+        let predicate=NSPredicate(format: "SELF MATCHES %@", REGX_PHONE)
+        
+        return predicate.evaluate(with: self)
     }
     
     /// 去除字符串首尾的空格和换行
@@ -45,10 +44,9 @@ extension String {
     ///
     /// - Returns: <#return value description#>
     func isEmail() -> Bool {
-//        let predicate=NSPredicate(format: "SELF MATCHES %@", REGX_EMAIL)
-//
-//        return predicate.evaluate(with: self)
-        return false
+        let predicate=NSPredicate(format: "SELF MATCHES %@", REGX_EMAIL)
+        
+        return predicate.evaluate(with: self)
     }
     
     /// 是否符合密码格式

@@ -35,6 +35,10 @@
 		DD7A3AF726E2592B00D30627 /* StringExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AF626E2592B00D30627 /* StringExtend.swift */; };
 		DD7A3AFA26E25A2900D30627 /* StringExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AF926E25A2900D30627 /* StringExtendTests.swift */; };
 		DD7A3AFB26E25AE300D30627 /* StringExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AF626E2592B00D30627 /* StringExtend.swift */; };
+		DD7A3AFD26E25F5A00D30627 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AB526DF252600D30627 /* Constant.swift */; };
+		DD7A3AFF26E262EC00D30627 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AFE26E262EC00D30627 /* FileUtil.swift */; };
+		DD7A3B0426E2639B00D30627 /* FileUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B0326E2639B00D30627 /* FileUtilTests.swift */; };
+		DD7A3B0526E263FF00D30627 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AFE26E262EC00D30627 /* FileUtil.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -122,6 +126,8 @@
 		DD7A3AF426E20CDE00D30627 /* ToastUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastUtil.swift; sourceTree = "<group>"; };
 		DD7A3AF626E2592B00D30627 /* StringExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtend.swift; sourceTree = "<group>"; };
 		DD7A3AF926E25A2900D30627 /* StringExtendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtendTests.swift; sourceTree = "<group>"; };
+		DD7A3AFE26E262EC00D30627 /* FileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		DD7A3B0326E2639B00D30627 /* FileUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtilTests.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 		DD7A3AB426DF250100D30627 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				DD7A3AFE26E262EC00D30627 /* FileUtil.swift */,
 				DD7A3AB526DF252600D30627 /* Constant.swift */,
 				DD7A3AB826DF287000D30627 /* ViewUtil.swift */,
 				DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */,
@@ -321,6 +328,14 @@
 			path = Extend;
 			sourceTree = "<group>";
 		};
+		DD7A3B0026E2630900D30627 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3B0326E2639B00D30627 /* FileUtilTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		DDBBACCE26B97727008A7DBB = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +381,7 @@
 		DDBBACF026B9772C008A7DBB /* RXMisTests */ = {
 			isa = PBXGroup;
 			children = (
+				DD7A3B0026E2630900D30627 /* Util */,
 				DD7A3AF826E259AA00D30627 /* Extend */,
 				DDBBACF126B9772C008A7DBB /* RXMisTests.swift */,
 				DDBBACF326B9772C008A7DBB /* Info.plist */,
@@ -706,6 +722,7 @@
 				DD7A3AED26E1B12600D30627 /* RegisterController.swift in Sources */,
 				DD7A3AE326E079B100D30627 /* YJHollowPageControl.m in Sources */,
 				DD7A3AB626DF252600D30627 /* Constant.swift in Sources */,
+				DD7A3AFF26E262EC00D30627 /* FileUtil.swift in Sources */,
 				DD7A3AEF26E1CCFE00D30627 /* TextFieldzExtend.swift in Sources */,
 				DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */,
 			);
@@ -715,7 +732,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7A3B0526E263FF00D30627 /* FileUtil.swift in Sources */,
+				DD7A3AFD26E25F5A00D30627 /* Constant.swift in Sources */,
 				DD7A3AFB26E25AE300D30627 /* StringExtend.swift in Sources */,
+				DD7A3B0426E2639B00D30627 /* FileUtilTests.swift in Sources */,
 				DD7A3AFA26E25A2900D30627 /* StringExtendTests.swift in Sources */,
 				DDBBACF226B9772C008A7DBB /* RXMisTests.swift in Sources */,
 			);

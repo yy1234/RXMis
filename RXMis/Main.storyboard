@@ -318,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-tP-TBy">
-                                <rect key="frame" x="20" y="64" width="374" height="410.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="409.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称（2-15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hxx-cH-riZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
@@ -357,31 +357,31 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码（6-15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YGx-sc-DvF">
-                                        <rect key="frame" x="0.0" y="190.5" width="374" height="23"/>
+                                        <rect key="frame" x="0.0" y="190.5" width="374" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7m4-KR-44y" userLabel="Driver">
-                                        <rect key="frame" x="0.0" y="233.5" width="374" height="0.5"/>
+                                        <rect key="frame" x="0.0" y="232.5" width="374" height="0.5"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="0.5" id="oFC-Vp-fzJ"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-u7-Qh0">
-                                        <rect key="frame" x="0.0" y="254" width="374" height="22"/>
+                                        <rect key="frame" x="0.0" y="253" width="374" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSw-zQ-H31" userLabel="Driver">
-                                        <rect key="frame" x="0.0" y="296" width="374" height="0.5"/>
+                                        <rect key="frame" x="0.0" y="295" width="374" height="0.5"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="0.5" id="sZQ-6F-8OR"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-JL-xrm">
-                                        <rect key="frame" x="0.0" y="316.5" width="374" height="44"/>
+                                        <rect key="frame" x="0.0" y="315.5" width="374" height="44"/>
                                         <color key="backgroundColor" name="PrimaryColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="pG3-Ke-JiG"/>
@@ -393,7 +393,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-pH-2fH">
-                                        <rect key="frame" x="0.0" y="380.5" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="379.5" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="注册就代表同意&lt;用户协议&gt;">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -420,7 +420,8 @@
                     <connections>
                         <outlet property="btRegister" destination="Sbx-JL-xrm" id="v02-iP-2fv"/>
                         <outlet property="tfComfirmPassword" destination="Egc-u7-Qh0" id="QaI-cp-OP8"/>
-                        <outlet property="tfPassword" destination="KRE-rx-qyH" id="Eiq-6q-1ua"/>
+                        <outlet property="tfEmail" destination="KRE-rx-qyH" id="ucK-vW-EB0"/>
+                        <outlet property="tfPassword" destination="YGx-sc-DvF" id="D2M-IF-Jjx"/>
                         <outlet property="tfPhone" destination="Kgw-Uf-AB9" id="fsb-1j-YVI"/>
                         <outlet property="thNickName" destination="hxx-cH-riZ" id="Y7a-Oq-T4q"/>
                     </connections>
