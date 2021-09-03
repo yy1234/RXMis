@@ -34,6 +34,7 @@
 		DD7A3AED26E1B12600D30627 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AEC26E1B12600D30627 /* RegisterController.swift */; };
 		DD7A3AEF26E1CCFE00D30627 /* TextFieldzExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AEE26E1CCFE00D30627 /* TextFieldzExtend.swift */; };
 		DD7A3AF126E209CA00D30627 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AF026E209C900D30627 /* BaseController.swift */; };
+		DD7A3AF526E20CDE00D30627 /* ToastUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3AF426E20CDE00D30627 /* ToastUtil.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -118,6 +119,7 @@
 		DD7A3AEC26E1B12600D30627 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		DD7A3AEE26E1CCFE00D30627 /* TextFieldzExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldzExtend.swift; sourceTree = "<group>"; };
 		DD7A3AF026E209C900D30627 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		DD7A3AF426E20CDE00D30627 /* ToastUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastUtil.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				DD7A3AB526DF252600D30627 /* Constant.swift */,
 				DD7A3AB826DF287000D30627 /* ViewUtil.swift */,
 				DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */,
+				DD7A3AF426E20CDE00D30627 /* ToastUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				DD7A3AE726E079B100D30627 /* YJBannerViewCollectionView.m in Sources */,
 				DD7A3AE126E079B100D30627 /* UIView+YJBannerViewExt.m in Sources */,
 				DD7A3AE426E079B100D30627 /* YJAbstractDotView.m in Sources */,
+				DD7A3AF526E20CDE00D30627 /* ToastUtil.swift in Sources */,
 				DD7A3AAF26DE788E00D30627 /* SplashController.swift in Sources */,
 				DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */,
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
