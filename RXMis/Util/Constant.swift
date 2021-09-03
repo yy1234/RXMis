@@ -6,6 +6,15 @@
 //
 
 import Foundation
+// MARK: - 开发环境
+/// 网络接口的地址
+///Rails课程API端点
+//let ENDPOINT="http://dev-my-cloud-music-api-rails.ixuea.com"
+
+/// SpringBoot课程API地址
+let ENDPOINT="http://my-cloud-music-api-sp-dev.ixuea.com"
+
+
 
 //MARK:尺寸
 //立即体验按钮的宽度

@@ -11,8 +11,18 @@ target 'RXMis' do
   pod 'Reveal-SDK', '~> 24', :configurations => ['Debug']
   pod 'YogaKit', '~> 1.18.1'
   pod 'SnapKit', '~> 5.0.0'
+  # 提示框架
   #https://github.com/jdg/MBProgressHUD
   pod 'MBProgressHUD', '~> 1.1.0'
+  #响应式编程框架
+  #https://github.com/ReactiveX/RxSwift
+  pod 'RxSwift', '5'
+  # RxSwift版本
+  pod 'Moya/RxSwift', '14.0.0'
+   
+  # JSON解析为对象
+  # https://github.com/alibaba/HandyJSON
+  pod 'HandyJSON', '5.0.0-beta.1'
   target 'RXMisTests' do
     inherit! :search_paths
     # Pods for testing
