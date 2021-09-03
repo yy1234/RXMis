@@ -50,6 +50,28 @@ class LoginOrRegisterController: UIViewController {
     func toRegister() {
 
     }
+    
+    
+    // MARK: - 第三方登录
+    
+    @IBAction func onWeChatClick(_ sender: UIButton) {
+        print("weChat")
+    }
+    @IBAction func onQQClick(_ sender: Any) {
+        print("QQ")
+
+    }
+    
+    @IBAction func onWeiBoClick(_ sender: Any) {
+        print("weiBo")
+
+    }
+    
+
+     @IBAction func onNeteaseClick(_ sender: Any) {
+        print("Netease")
+
+     }
     /*
     // MARK: - Navigation
 

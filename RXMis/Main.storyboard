@@ -181,6 +181,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button" image="LoginWechat"/>
                                                                                 <state key="highlighted" image="LoginWechatSelected"/>
+                                                                                <connections>
+                                                                                    <action selector="onWeChatClick:" destination="X1X-no-Az8" eventType="touchUpInside" id="K2B-54-iS6"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-le-n7t">
                                                                                 <rect key="frame" x="30" y="42" width="29" height="33"/>
@@ -201,6 +204,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button" image="LoginQQ"/>
                                                                                 <state key="highlighted" image="LoginQQSelected"/>
+                                                                                <connections>
+                                                                                    <action selector="onQQClick:" destination="X1X-no-Az8" eventType="touchUpInside" id="HA4-7h-k9n"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGu-J1-rFV">
                                                                                 <rect key="frame" x="33.5" y="42" width="21.5" height="33"/>
@@ -221,6 +227,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button" image="LoginWeibo"/>
                                                                                 <state key="highlighted" image="LoginWeiboSelected"/>
+                                                                                <connections>
+                                                                                    <action selector="onWeiBoClick:" destination="X1X-no-Az8" eventType="touchUpInside" id="4cC-0K-VJE"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDP-Ri-6Nl">
                                                                                 <rect key="frame" x="30" y="42" width="29" height="33"/>
@@ -241,6 +250,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button" image="LoginNetease"/>
                                                                                 <state key="highlighted" image="LoginNeteaseSelected"/>
+                                                                                <connections>
+                                                                                    <action selector="onNeteaseClick:" destination="X1X-no-Az8" eventType="touchUpInside" id="Gfx-QV-p65"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4G-ej-aA7">
                                                                                 <rect key="frame" x="15.5" y="42" width="57.5" height="33"/>
