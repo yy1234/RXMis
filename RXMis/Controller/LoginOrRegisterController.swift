@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginOrRegisterController: UIViewController {
+class LoginOrRegisterController: BaseController {
     //MARK: - 声明
     @IBOutlet weak var btLogin: UIButton!
     @IBOutlet weak var btRegister: UIButton!
@@ -15,6 +15,11 @@ class LoginOrRegisterController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    override func initViews() {
+        super.initViews()
         //圆角
         ViewUtil.showLargerRadius(view: btLogin)
         ViewUtil.showLargerRadius(view: btRegister)
@@ -22,7 +27,6 @@ class LoginOrRegisterController: UIViewController {
         //边框
         btLogin.showColorPrimaryBorder()
         btRegister.showColorPrimaryBorder()
-        // Do any additional setup after loading the view.
     }
     //MARK: - 事件
     //按下
@@ -48,7 +52,9 @@ class LoginOrRegisterController: UIViewController {
     }
     
     func toRegister() {
-
+        let register = storyboard!.instantiateViewController(identifier: "Register")
+        navigationController?.pushViewController(register, animated: true)
+        
     }
     
     

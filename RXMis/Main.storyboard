@@ -309,6 +309,126 @@
             </objects>
             <point key="canvasLocation" x="444.92753623188412" y="918.75"/>
         </scene>
+        <!--Register Controller-->
+        <scene sceneID="XAA-Nr-Aso">
+            <objects>
+                <viewController storyboardIdentifier="Register" id="dUk-AZ-WQL" customClass="RegisterController" customModule="RXMis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J6r-2Z-1Yy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-tP-TBy">
+                                <rect key="frame" x="20" y="64" width="374" height="410.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称（2-15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hxx-cH-riZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnY-nV-kYa" userLabel="Driver">
+                                        <rect key="frame" x="0.0" y="43" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="cWP-gn-4Cf"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kgw-Uf-AB9">
+                                        <rect key="frame" x="0.0" y="63.5" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-3Z-jSC" userLabel="Driver">
+                                        <rect key="frame" x="0.0" y="106.5" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="fqU-Iv-GUt"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KRE-rx-qyH">
+                                        <rect key="frame" x="0.0" y="127" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="756-ko-fFy" userLabel="Driver">
+                                        <rect key="frame" x="0.0" y="170" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="7PI-C1-d30"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码（6-15位）" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YGx-sc-DvF">
+                                        <rect key="frame" x="0.0" y="190.5" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7m4-KR-44y" userLabel="Driver">
+                                        <rect key="frame" x="0.0" y="233.5" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="oFC-Vp-fzJ"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-u7-Qh0">
+                                        <rect key="frame" x="0.0" y="254" width="374" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSw-zQ-H31" userLabel="Driver">
+                                        <rect key="frame" x="0.0" y="296" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="sZQ-6F-8OR"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-JL-xrm">
+                                        <rect key="frame" x="0.0" y="316.5" width="374" height="44"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="pG3-Ke-JiG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="注册"/>
+                                        <connections>
+                                            <action selector="registerClick:" destination="dUk-AZ-WQL" eventType="touchUpInside" id="R0K-2m-yAu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-pH-2fH">
+                                        <rect key="frame" x="0.0" y="380.5" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="注册就代表同意&lt;用户协议&gt;">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onAgreeMentClick:" destination="dUk-AZ-WQL" eventType="touchUpInside" id="UP2-YF-seI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tnY-nV-kYa" firstAttribute="leading" secondItem="Aek-tP-TBy" secondAttribute="leading" id="70w-Im-k0J"/>
+                                    <constraint firstAttribute="trailing" secondItem="tnY-nV-kYa" secondAttribute="trailing" id="8ok-jR-rbj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bvL-ee-0Yh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aek-tP-TBy" firstAttribute="leading" secondItem="bvL-ee-0Yh" secondAttribute="leading" constant="20" id="5Na-Ld-59o"/>
+                            <constraint firstItem="Aek-tP-TBy" firstAttribute="top" secondItem="bvL-ee-0Yh" secondAttribute="top" constant="20" id="e2y-km-d8T"/>
+                            <constraint firstItem="bvL-ee-0Yh" firstAttribute="trailing" secondItem="Aek-tP-TBy" secondAttribute="trailing" constant="20" id="n0D-Fd-dLt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btRegister" destination="Sbx-JL-xrm" id="v02-iP-2fv"/>
+                        <outlet property="tfComfirmPassword" destination="Egc-u7-Qh0" id="QaI-cp-OP8"/>
+                        <outlet property="tfPassword" destination="KRE-rx-qyH" id="Eiq-6q-1ua"/>
+                        <outlet property="tfPhone" destination="Kgw-Uf-AB9" id="fsb-1j-YVI"/>
+                        <outlet property="thNickName" destination="hxx-cH-riZ" id="Y7a-Oq-T4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cp3-qO-0KT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="923"/>
+        </scene>
         <!--Home Controller-->
         <scene sceneID="FKx-F1-jY9">
             <objects>
@@ -450,6 +570,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
