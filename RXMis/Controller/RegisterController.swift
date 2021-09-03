@@ -42,6 +42,8 @@ class RegisterController: BaseController {
     //MARK: - 事件
 
     @IBAction func registerClick(_ sender: Any) {
+        
+        
     }
     
     @IBAction func onAgreeMentClick(_ sender: Any) {
