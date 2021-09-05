@@ -44,6 +44,66 @@ class RegisterController: BaseController {
     //MARK: - 事件
 
     @IBAction func registerClick(_ sender: Any) {
+        let provide = MoyaProvider<Service>(plugins:[NetworkLoggerPlugin()])
+//        provide.request(.sheetDetail(id: "1")) { result in
+//            switch result {
+//            case .success(let response):
+//                let data = response.data
+//                let code =  response.statusCode
+//                let dataString = String(data: data, encoding: .utf8)
+//                print("response" + dataString!)
+//            case .failure(let error):
+//
+//            print("请求失败\(error)")
+//            default: break
+//
+//            }
+//        }
+        
+        provide.request(.sheetDetail(id: "1")) { event in
+            switch event {
+            case .success(let response):
+                let data = response.data
+                let dataString = String(data: data, encoding: .utf8)
+                print("response" + dataString!)
+            case .failure(let error):
+                switch error {
+                case .imageMapping( _):
+               print("图片解析错误")
+                case .jsonMapping( _):
+               print("json解析错误")
+                case .statusCode( _):
+                print("json解析错误")
+                case .stringMapping( _):
+                print("字符串映射错误")
+                case .underlying(let nsError as NSError, _):
+                print("错误转换成了error")
+                    switch nsError.code {
+                    case NSURLErrorNotConnectedToInternet:
+                        print("网络不太好，请稍后再试！")
+                    case NSURLErrorTimedOut:
+                        print("连接超时，请稍后再试！")
+                    default:
+                        print("未知错误，请稍后再试！")
+                    }
+                case .objectMapping(_, _):
+                    print("对象编码错误")
+                case .encodableMapping(_):
+                    print("")
+                case .requestMapping(_):
+                    print("")
+
+                case .parameterEncoding(_):
+                    print("")
+
+                }
+            print("请求失败\(error)")
+    
+                
+            }
+        }
+        
+        
        
         let nickName = thNickName.text!.trim()!
         if nickName.isEmpty {

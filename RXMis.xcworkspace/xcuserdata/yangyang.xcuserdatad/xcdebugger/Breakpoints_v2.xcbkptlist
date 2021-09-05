@@ -3,4 +3,84 @@
    uuid = "6EFEA894-B0A7-44B8-B4B4-A9C8B3221EA5"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19DC9AF8-C941-485F-B307-DE261B8B0EE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RXMis/Controller/RegisterController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "registerClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19DC9AF8-C941-485F-B307-DE261B8B0EE4 - 980515c3acfd44c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in RXMis.RegisterController.registerClick(Any) -&gt; ()"
+                  moduleName = "RXMis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangyang/Documents/git/RXMis/RXMis/Controller/RegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2542">
+               </Location>
+               <Location
+                  uuid = "19DC9AF8-C941-485F-B307-DE261B8B0EE4 - eb6c316f81b03d93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in RXMis.RegisterController.registerClick(Any) -&gt; ()"
+                  moduleName = "eval101.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangyang/Documents/git/RXMis/RXMis/Controller/RegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2542">
+               </Location>
+               <Location
+                  uuid = "19DC9AF8-C941-485F-B307-DE261B8B0EE4 - ec69ae4fba1ef191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in RXMis.RegisterController.registerClick(Any) -&gt; ()"
+                  moduleName = "eval103.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangyang/Documents/git/RXMis/RXMis/Controller/RegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2542">
+               </Location>
+               <Location
+                  uuid = "19DC9AF8-C941-485F-B307-DE261B8B0EE4 - eceb65dfafcfaf96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in RXMis.RegisterController.registerClick(Any) -&gt; ()"
+                  moduleName = "eval104.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangyang/Documents/git/RXMis/RXMis/Controller/RegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2542">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
