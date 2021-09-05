@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (5.4.3)
   - DesignKit (0.1.0)
-  - HandyJSON (5.0.0-beta.1)
+  - HandyJSON (5.0.2)
   - MBProgressHUD (1.1.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
@@ -17,7 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - DesignKit (from `./Frameworks/DesignKit`)
-  - HandyJSON (= 5.0.0-beta.1)
+  - HandyJSON (= 5.0.2)
   - MBProgressHUD (~> 1.1.0)
   - Moya/RxSwift (= 14.0.0)
   - Reveal-SDK (~> 24)
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   DesignKit: 52b474f52353f04a2cb149f87832994bc88e8bb5
-  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
@@ -53,6 +53,6 @@ SPEC CHECKSUMS:
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 8e3cd60fceef299c3f101d36811a8f92157ae5a2
+PODFILE CHECKSUM: 28a8a154c4903c3879461225fceb10179a4b1fc0
 
 COCOAPODS: 1.10.0

@@ -44,7 +44,20 @@ class RegisterController: BaseController {
     //MARK: - 事件
 
     @IBAction func registerClick(_ sender: Any) {
-        let provide = MoyaProvider<Service>(plugins:[NetworkLoggerPlugin()])
+        //使用网络指示器插件
+        let networkActivityPlugin = NetworkActivityPlugin { changeType, TargetType in
+            //changeType就是 NetworkActivityChangeType
+            //TargetType就是我们自定义的Service
+            if changeType == .began{
+                print("开始请求了")
+                ToastUtil.showLoading()
+            }else{
+                print("就是了请求了")
+                ToastUtil.hideLoading()
+            }
+            
+        }
+        let provide = MoyaProvider<Service>(plugins:[NetworkLoggerPlugin(),networkActivityPlugin])
 //        provide.request(.sheetDetail(id: "1")) { result in
 //            switch result {
 //            case .success(let response):
@@ -59,7 +72,13 @@ class RegisterController: BaseController {
 //
 //            }
 //        }
-        
+        provide.rx.request(.sheetDetail(id: "1")).asObservable().mapString().mapObject(SheetWraper.self).subscribe { event in
+            if let data = event.element{
+             print("data")
+            }
+        }
+    
+        return;
         provide.request(.sheetDetail(id: "1")) { event in
             switch event {
             case .success(let response):

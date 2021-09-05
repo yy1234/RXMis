@@ -22,7 +22,7 @@ target 'RXMis' do
    
   # JSON解析为对象
   # https://github.com/alibaba/HandyJSON
-  pod 'HandyJSON', '5.0.0-beta.1'
+  pod 'HandyJSON', '5.0.2'
   target 'RXMisTests' do
     inherit! :search_paths
     # Pods for testing
