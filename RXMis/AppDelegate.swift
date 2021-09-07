@@ -40,7 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = controller
 
     }
-
+    func logout() {
+        
+    }
     //跳转到引导界面
     func toGuide()  {
     

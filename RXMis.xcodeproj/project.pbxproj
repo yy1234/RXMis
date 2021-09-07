@@ -43,6 +43,12 @@
 		DD7A3B0B26E4F97900D30627 /* SheetWraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B0A26E4F97900D30627 /* SheetWraper.swift */; };
 		DD7A3B0D26E4F9D300D30627 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B0C26E4F9D200D30627 /* Sheet.swift */; };
 		DD7A3B0F26E4FEDA00D30627 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B0E26E4FEDA00D30627 /* Observable.swift */; };
+		DD7A3B1126E5B8EC00D30627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1026E5B8EC00D30627 /* BaseResponse.swift */; };
+		DD7A3B1326E5B9FC00D30627 /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1226E5B9FC00D30627 /* DetailResponse.swift */; };
+		DD7A3B1526E5BDA000D30627 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1426E5BD9F00D30627 /* ListResponse.swift */; };
+		DD7A3B1726E5BEFC00D30627 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1626E5BEFC00D30627 /* Api.swift */; };
+		DD7A3B1926E6547B00D30627 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1826E6547A00D30627 /* Meta.swift */; };
+		DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -136,6 +142,12 @@
 		DD7A3B0A26E4F97900D30627 /* SheetWraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetWraper.swift; sourceTree = "<group>"; };
 		DD7A3B0C26E4F9D200D30627 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		DD7A3B0E26E4FEDA00D30627 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		DD7A3B1026E5B8EC00D30627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		DD7A3B1226E5B9FC00D30627 /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
+		DD7A3B1426E5BD9F00D30627 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		DD7A3B1626E5BEFC00D30627 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		DD7A3B1826E6547A00D30627 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +253,7 @@
 				DD7A3AB826DF287000D30627 /* ViewUtil.swift */,
 				DD7A3AEA26E0BDDC00D30627 /* PreferenceUtil.swift */,
 				DD7A3AF426E20CDE00D30627 /* ToastUtil.swift */,
+				DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -349,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7A3B0726E27DD900D30627 /* Service.swift */,
+				DD7A3B1626E5BEFC00D30627 /* Api.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -358,6 +372,10 @@
 			children = (
 				DD7A3B0A26E4F97900D30627 /* SheetWraper.swift */,
 				DD7A3B0C26E4F9D200D30627 /* Sheet.swift */,
+				DD7A3B1026E5B8EC00D30627 /* BaseResponse.swift */,
+				DD7A3B1226E5B9FC00D30627 /* DetailResponse.swift */,
+				DD7A3B1426E5BD9F00D30627 /* ListResponse.swift */,
+				DD7A3B1826E6547A00D30627 /* Meta.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -738,24 +756,30 @@
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
 				DD7A3B0B26E4F97900D30627 /* SheetWraper.swift in Sources */,
+				DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */,
 				DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */,
 				DD7A3AEB26E0BDDC00D30627 /* PreferenceUtil.swift in Sources */,
 				DD7A3AB926DF287000D30627 /* ViewUtil.swift in Sources */,
 				DD7A3AF126E209CA00D30627 /* BaseController.swift in Sources */,
 				DDF33D7D26CA943C00B3DB19 /* ExampleListViewController.swift in Sources */,
 				DD7A3B0F26E4FEDA00D30627 /* Observable.swift in Sources */,
+				DD7A3B1326E5B9FC00D30627 /* DetailResponse.swift in Sources */,
 				DD7A3B0D26E4F9D300D30627 /* Sheet.swift in Sources */,
+				DD7A3B1126E5B8EC00D30627 /* BaseResponse.swift in Sources */,
 				DD7A3AB226DE7B8400D30627 /* GuideController.swift in Sources */,
 				DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */,
+				DD7A3B1726E5BEFC00D30627 /* Api.swift in Sources */,
 				DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */,
 				DD7A3AE926E079B100D30627 /* YJBannerViewFooter.m in Sources */,
 				DD7A3ABC26DF2A1100D30627 /* ViewExtend.swift in Sources */,
 				DD7A3ABE26DF6E1500D30627 /* ColorExtend.swift in Sources */,
 				DD7A3AED26E1B12600D30627 /* RegisterController.swift in Sources */,
+				DD7A3B1526E5BDA000D30627 /* ListResponse.swift in Sources */,
 				DD7A3AE326E079B100D30627 /* YJHollowPageControl.m in Sources */,
 				DD7A3AB626DF252600D30627 /* Constant.swift in Sources */,
 				DD7A3AFF26E262EC00D30627 /* FileUtil.swift in Sources */,
 				DD7A3AEF26E1CCFE00D30627 /* TextFieldzExtend.swift in Sources */,
+				DD7A3B1926E6547B00D30627 /* Meta.swift in Sources */,
 				DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -58,7 +58,7 @@ class RegisterController: BaseController {
             
         }
         let provide = MoyaProvider<Service>(plugins:[NetworkLoggerPlugin(),networkActivityPlugin])
-//        provide.request(.sheetDetail(id: "1")) { result in
+//        provide.request(.sheets) { result in
 //            switch result {
 //            case .success(let response):
 //                let data = response.data
@@ -72,12 +72,46 @@ class RegisterController: BaseController {
 //
 //            }
 //        }
-        provide.rx.request(.sheetDetail(id: "1")).asObservable().mapString().mapObject(SheetWraper.self).subscribe { event in
-            if let data = event.element{
-             print("data")
-            }
+//        provide.rx.request(.sheets).asObservable().mapString().mapObject(ListResponse<Sheet>.self).subscribe { event in
+//            if let data = event.element{
+//
+//             print("data")
+//            }
+//        }
+//        provide.rx.request(.sheets)
+//            .filterSuccessfulStatusCodes()
+//            .asObservable()
+//            .mapString()
+//            .mapObject(ListResponse<Sheet>.self)
+//            .subscribe { data in
+//                print("111\(data?.data?.count)")
+//            } onError: { e in
+//                print("111")
+//
+//            } onCompleted: {
+//                print("111")
+//
+//            } onDisposed: {
+//                print("111")
+//
+//            }
+
+//        Api.shared.sheets().subscribe { data in
+//            print("2")
+//        } onError: { error in
+//            print("2")
+//        } onCompleted: {
+//            print("2")
+//        } onDisposed: {
+//            print("2")
+//        }
+
+        Api.shared.sheets().subscribeOnSuccess { data in
+            print("111")
         }
-    
+
+        
+
         return;
         provide.request(.sheetDetail(id: "1")) { event in
             switch event {

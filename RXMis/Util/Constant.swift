@@ -14,7 +14,8 @@ import Foundation
 /// SpringBoot课程API地址
 let ENDPOINT="http://my-cloud-music-api-sp-dev.ixuea.com"
 
-
+/// 是否是调试模式
+let DEBUG = true
 
 //MARK:尺寸
 //立即体验按钮的宽度
