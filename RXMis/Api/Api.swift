@@ -74,4 +74,25 @@ class Api {
         return provider.rx.request(.sheetDetail(id: id)).filterSuccessfulStatusCodes().asObservable().mapString().mapObject(DetailResponse<Sheet>.self)
 
     }
+    
+    /// 创建用户（注册）
+    ///
+    /// - Parameters:
+    ///   - avatar: 头像
+    ///   - nickname: 昵称
+    ///   - phone: 手机号
+    ///   - email: 邮箱
+    ///   - password: 密码
+    ///   - qq_id: qq第三方登录后的Id
+    ///   - weibo_id: 微博第三方登录后的Id
+    /// - Returns: <#return value description#>
+    func createUser(avatar:String?=nil,nickname:String,phone:String,email:String,password:String,qq_id:String?=nil,weibo_id:String?=nil,wechat_id:String?=nil) -> Observable<DetailResponse<BaseModel>?> {
+        return provider
+            .rx
+            .request(.createUser(avatar: avatar, nickname: nickname, phone: phone, email: email, password: password, qq_id: qq_id, weibo_id: weibo_id,wechat_id:wechat_id))
+            .filterSuccessfulStatusCodes()
+            .asObservable()
+            .mapString()
+            .mapObject(DetailResponse<BaseModel>.self)
+    }
 }

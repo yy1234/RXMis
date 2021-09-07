@@ -49,6 +49,7 @@
 		DD7A3B1726E5BEFC00D30627 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1626E5BEFC00D30627 /* Api.swift */; };
 		DD7A3B1926E6547B00D30627 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1826E6547A00D30627 /* Meta.swift */; };
 		DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */; };
+		DD7A3B1D26E717F000D30627 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1C26E717F000D30627 /* BaseModel.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -148,6 +149,7 @@
 		DD7A3B1626E5BEFC00D30627 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		DD7A3B1826E6547A00D30627 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
+		DD7A3B1C26E717F000D30627 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				DD7A3B1226E5B9FC00D30627 /* DetailResponse.swift */,
 				DD7A3B1426E5BD9F00D30627 /* ListResponse.swift */,
 				DD7A3B1826E6547A00D30627 /* Meta.swift */,
+				DD7A3B1C26E717F000D30627 /* BaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 				DD7A3AB226DE7B8400D30627 /* GuideController.swift in Sources */,
 				DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */,
 				DD7A3B1726E5BEFC00D30627 /* Api.swift in Sources */,
+				DD7A3B1D26E717F000D30627 /* BaseModel.swift in Sources */,
 				DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */,
 				DD7A3AE926E079B100D30627 /* YJBannerViewFooter.m in Sources */,
 				DD7A3ABC26DF2A1100D30627 /* ViewExtend.swift in Sources */,

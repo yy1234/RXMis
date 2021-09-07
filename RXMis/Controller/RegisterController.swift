@@ -106,10 +106,9 @@ class RegisterController: BaseController {
 //            print("2")
 //        }
 
-        Api.shared.sheets().subscribeOnSuccess { data in
-            print("111")
+        Api.shared.createUser(nickname: "TTT", phone: "13921434935", email: "270089758@qq.com", password: "123456").subscribeOnSuccess { data in
+            print("111\(data?.data?.id)");
         }
-
         
 
         return;
