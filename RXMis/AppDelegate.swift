@@ -40,8 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = controller
 
     }
-    func logout() {
+    //    用户登出
+    func onLogout() {
         
+    }
+    //用户登入
+    func onLogin(_ data: Session) {
+//        保存用户信息
+        PreferenceUtil.setUserId(data.user)
+        PreferenceUtil.setUserToken(data.session)
+        
+        //跳转到首页
+        toHome()
     }
     //跳转到引导界面
     func toGuide()  {

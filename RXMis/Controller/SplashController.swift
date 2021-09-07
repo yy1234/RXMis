@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashController: UIViewController {
+class SplashController: BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,8 @@ class SplashController: UIViewController {
 //        appDelegate.toGuide()
         if PreferenceUtil.isShowGuide() {
             AppDelegate.sharde.toGuide()
+        }else if(PreferenceUtil.isLogin()){
+            AppDelegate.sharde.toHome()
         }else{
             AppDelegate.sharde.toLoginOrRegister()
         }

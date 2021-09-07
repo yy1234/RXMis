@@ -16,6 +16,8 @@ enum Service {
     case sheetDetail(id: String)
     case sheets
     case createUser(avatar:String?,nickname:String,phone:String,email:String,password:String,qq_id:String?,weibo_id:String?,wechat_id:String?)
+    case login(phone:String?,email:String?,password:String?,qq_id:String?,weibo_id:String?,wechat_id:String?)
+
 }
 
 extension Service: TargetType {
@@ -32,6 +34,8 @@ extension Service: TargetType {
             return "/v1/sheets/\(id)"
         case .createUser:
             return "/v1/users"
+        case .login:
+            return "/v1/sessions"
         default:
             return ""
         }
@@ -39,7 +43,7 @@ extension Service: TargetType {
 //    方法
     var method: Moya.Method {
         switch self {
-        case .createUser:
+        case .createUser,.login:
             return .post
         default:
             return .get
@@ -56,6 +60,8 @@ extension Service: TargetType {
         switch self {
         case .createUser(let avatar, let nickname, let phone, let email, let password, let qq_id, let weibo_id,let wechat_id):
             return .requestParameters(parameters: ["avatar":avatar,"nickname":nickname,"phone":phone,"email":email,"password":password,"qq_id":qq_id,"weibo_id":weibo_id,"wechat_id":wechat_id], encoding: JSONEncoding.default)
+        case .login(let phone, let email, let password,let qq_id, let weibo_id,let wechat_id):
+            return HttpUtil.jsonRequestParamters(["phone":phone ?? "","email": email ?? "","password" :password  ?? "","qq_id":qq_id  ?? "","weibo_id":weibo_id  ?? "","wechat_id":wechat_id  ?? ""])
         default:
             return .requestPlain
 

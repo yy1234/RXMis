@@ -35,7 +35,7 @@ class HttpUtil {
                 switch code {
                 case 401:
                     //表示要登录
-                    AppDelegate.sharde.logout()
+                    AppDelegate.sharde.onLogout()
                     
                     //弹出提示
                     ToastUtil.short("登录信息过期，请重新登录！")
@@ -94,7 +94,7 @@ class HttpUtil {
                 
             case .requestMapping:
                 ToastUtil.short("请求映射错误，请稍后再试！")
-                
+                 
             case .objectMapping(_, _):
                 ToastUtil.short("对象映射错误，请稍后再试！")
             case .parameterEncoding(_):
@@ -119,6 +119,14 @@ class HttpUtil {
         }
         
         
+    }
+    
+    /// 返回JSON编码的参数
+    ///
+    /// - Parameter parameters: 要编码的参数
+    /// - Returns: 编码后的Task
+    static func jsonRequestParamters(_ parameters:[String:Any]) -> Task {
+        return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
     }
     
     /// 显示未知错误

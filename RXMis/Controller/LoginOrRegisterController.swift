@@ -48,7 +48,8 @@ class LoginOrRegisterController: BaseController {
     }
     
     func toLogin()  {
-        
+        let register = storyboard!.instantiateViewController(identifier: "Login")
+        navigationController?.pushViewController(register, animated: true)
     }
     
     func toRegister() {

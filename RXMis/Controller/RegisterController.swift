@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import Moya
 
-class RegisterController: BaseController {
+class RegisterController: BaseLoginController  {
 
     //MARK: - 声明
     @IBOutlet weak var thNickName: UITextField!
@@ -106,54 +106,15 @@ class RegisterController: BaseController {
 //            print("2")
 //        }
 
-        Api.shared.createUser(nickname: "TTT", phone: "13921434935", email: "270089758@qq.com", password: "123456").subscribeOnSuccess { data in
-            print("111\(data?.data?.id)");
-        }
-        
+//        Api.shared.createUser(nickname: "TTT", phone: "13921434935", email: "270089758@qq.com", password: "123456").subscribeOnSuccess { data in
+//            print("111\(data?.data?.id)");
+//        }
+//        Api.shared.login(phone: "13921434935",  password: "123456").subscribeOnSuccess { data in
+//            print("")
+//        }
 
-        return;
-        provide.request(.sheetDetail(id: "1")) { event in
-            switch event {
-            case .success(let response):
-                let data = response.data
-                let dataString = String(data: data, encoding: .utf8)
-                print("response" + dataString!)
-            case .failure(let error):
-                switch error {
-                case .imageMapping( _):
-               print("图片解析错误")
-                case .jsonMapping( _):
-               print("json解析错误")
-                case .statusCode( _):
-                print("json解析错误")
-                case .stringMapping( _):
-                print("字符串映射错误")
-                case .underlying(let nsError as NSError, _):
-                print("错误转换成了error")
-                    switch nsError.code {
-                    case NSURLErrorNotConnectedToInternet:
-                        print("网络不太好，请稍后再试！")
-                    case NSURLErrorTimedOut:
-                        print("连接超时，请稍后再试！")
-                    default:
-                        print("未知错误，请稍后再试！")
-                    }
-                case .objectMapping(_, _):
-                    print("对象编码错误")
-                case .encodableMapping(_):
-                    print("")
-                case .requestMapping(_):
-                    print("")
-
-                case .parameterEncoding(_):
-                    print("")
-
-                }
-            print("请求失败\(error)")
     
-                
-            }
-        }
+ 
         
         
        
@@ -238,7 +199,16 @@ class RegisterController: BaseController {
             ToastUtil.short("两次密码不一致！")
             return
         }
+        
+        Api.shared.createUser(nickname: thNickName.text!, phone: tfPhone.text!, email: tfEmail.text!, password: tfPassword.text!).subscribeOnSuccess { data in
+            if let resData = data?.data {
+                
+            }
+        }.disposed(by: DisposeBag())
     }
+    
+    
+  
     
     @IBAction func onAgreeMentClick(_ sender: Any) {
     }

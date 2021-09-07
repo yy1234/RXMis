@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cp3-qO-0KT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="923"/>
+            <point key="canvasLocation" x="1438" y="1292"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="FKx-F1-jY9">
@@ -552,8 +552,84 @@
             </objects>
             <point key="canvasLocation" x="-465.21739130434787" y="918.75"/>
         </scene>
+        <!--Login Controller-->
+        <scene sceneID="qAt-Z0-BYu">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="FIq-Ou-EDP" customClass="LoginController" customModule="RXMis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wed-FF-mJw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-qj-2Qm">
+                                <rect key="frame" x="20" y="64" width="374" height="219"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号/邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-HV-Xyw">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-9R-W7D" userLabel="Divider">
+                                        <rect key="frame" x="0.0" y="43" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="t3g-pt-qpt"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irS-Ui-ltT">
+                                        <rect key="frame" x="0.0" y="63.5" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41p-4J-G7X">
+                                        <rect key="frame" x="0.0" y="106.5" width="374" height="0.5"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="NdU-nJ-9S4"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvg-ge-Wf9">
+                                        <rect key="frame" x="0.0" y="127" width="374" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="OKr-e6-yGr"/>
+                                        </constraints>
+                                        <state key="normal" title="登录" backgroundImage="ButtonNormal"/>
+                                        <state key="highlighted" backgroundImage="ButtonSelect"/>
+                                        <connections>
+                                            <action selector="onLoginClick:" destination="FIq-Ou-EDP" eventType="touchUpInside" id="9xN-NM-tuH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-zY-RJd">
+                                        <rect key="frame" x="0.0" y="191" width="374" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="忘记密码？">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQ3-X3-xjP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nQ3-X3-xjP" firstAttribute="trailing" secondItem="b6r-qj-2Qm" secondAttribute="trailing" constant="20" id="Mh3-6c-yRe"/>
+                            <constraint firstItem="b6r-qj-2Qm" firstAttribute="leading" secondItem="nQ3-X3-xjP" secondAttribute="leading" constant="20" id="Nif-kV-rC3"/>
+                            <constraint firstItem="b6r-qj-2Qm" firstAttribute="top" secondItem="nQ3-X3-xjP" secondAttribute="top" constant="20" id="nzW-8H-zv9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfLoginBtn" destination="rvg-ge-Wf9" id="h5t-Xi-7J1"/>
+                        <outlet property="tfPassword" destination="irS-Ui-ltT" id="jPc-gV-L8h"/>
+                        <outlet property="tfUserName" destination="7fh-HV-Xyw" id="qUh-k6-fhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Adq-ls-Pc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.6231884057972" y="543.75"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ButtonNormal" width="13.333333015441895" height="13.333333015441895"/>
+        <image name="ButtonSelect" width="13.333333015441895" height="13.333333015441895"/>
         <image name="LoginBackground" width="180" height="186.66667175292969"/>
         <image name="LoginLogo" width="60" height="60"/>
         <image name="LoginNetease" width="42" height="42"/>
@@ -569,6 +645,9 @@
         <namedColor name="PrimaryColor">
             <color red="0.8666666666666667" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

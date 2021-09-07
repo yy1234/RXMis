@@ -1,40 +1,25 @@
 //
-//  BaseController.swift
+//  BaseCommonController.swift
 //  RXMis
-//  通用控制器
-//  Created by 杨洋 on 2021/9/3.
+//  通用的业务控制器
+//  Created by 杨洋 on 2021/9/7.
 //
 
 import UIKit
 import RxSwift
 
-class BaseController: UIViewController {
-
+class BaseCommonController: BaseController {
+    //负责对象销毁
+    //这个功能类似NotificationCenter的removeObserver
+    let disposeBag = DisposeBag()
     
-    //MARK: - 方法
-    @objc func injected(){
-//        initViews()
-
-
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        initViews()
-        initDatas()
-        initListenners()
-    }
-    
-    func initViews() {
-    
-    }
-    
-    func initDatas(){
-        
-    }
 
-    func initListenners()  {
-    
+        // Do any additional setup after loading the view.
     }
+    
+
     /*
     // MARK: - Navigation
 

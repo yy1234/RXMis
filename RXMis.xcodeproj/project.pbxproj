@@ -50,6 +50,10 @@
 		DD7A3B1926E6547B00D30627 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1826E6547A00D30627 /* Meta.swift */; };
 		DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */; };
 		DD7A3B1D26E717F000D30627 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B1C26E717F000D30627 /* BaseModel.swift */; };
+		DD7A3B2126E7447200D30627 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2026E7447200D30627 /* Session.swift */; };
+		DD7A3B2326E7508B00D30627 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2226E7508B00D30627 /* LoginController.swift */; };
+		DD7A3B2526E7769B00D30627 /* BaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */; };
+		DD7A3B2726E777F700D30627 /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2626E777F600D30627 /* BaseCommonController.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -150,6 +154,10 @@
 		DD7A3B1826E6547A00D30627 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		DD7A3B1A26E6FF1000D30627 /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
 		DD7A3B1C26E717F000D30627 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		DD7A3B2026E7447200D30627 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		DD7A3B2226E7508B00D30627 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginController.swift; sourceTree = "<group>"; };
+		DD7A3B2626E777F600D30627 /* BaseCommonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommonController.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +251,9 @@
 				DD7A3AC326E0711B00D30627 /* HomeController.swift */,
 				DD7A3AEC26E1B12600D30627 /* RegisterController.swift */,
 				DD7A3AF026E209C900D30627 /* BaseController.swift */,
+				DD7A3B2226E7508B00D30627 /* LoginController.swift */,
+				DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */,
+				DD7A3B2626E777F600D30627 /* BaseCommonController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +390,7 @@
 				DD7A3B1426E5BD9F00D30627 /* ListResponse.swift */,
 				DD7A3B1826E6547A00D30627 /* Meta.swift */,
 				DD7A3B1C26E717F000D30627 /* BaseModel.swift */,
+				DD7A3B2026E7447200D30627 /* Session.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -748,6 +760,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7A3B2726E777F700D30627 /* BaseCommonController.swift in Sources */,
 				DD7A3AE726E079B100D30627 /* YJBannerViewCollectionView.m in Sources */,
 				DD7A3AF726E2592B00D30627 /* StringExtend.swift in Sources */,
 				DD7A3AE126E079B100D30627 /* UIView+YJBannerViewExt.m in Sources */,
@@ -760,10 +773,12 @@
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
 				DD7A3B0B26E4F97900D30627 /* SheetWraper.swift in Sources */,
 				DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */,
+				DD7A3B2526E7769B00D30627 /* BaseLoginController.swift in Sources */,
 				DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */,
 				DD7A3AEB26E0BDDC00D30627 /* PreferenceUtil.swift in Sources */,
 				DD7A3AB926DF287000D30627 /* ViewUtil.swift in Sources */,
 				DD7A3AF126E209CA00D30627 /* BaseController.swift in Sources */,
+				DD7A3B2326E7508B00D30627 /* LoginController.swift in Sources */,
 				DDF33D7D26CA943C00B3DB19 /* ExampleListViewController.swift in Sources */,
 				DD7A3B0F26E4FEDA00D30627 /* Observable.swift in Sources */,
 				DD7A3B1326E5B9FC00D30627 /* DetailResponse.swift in Sources */,
@@ -778,6 +793,7 @@
 				DD7A3ABC26DF2A1100D30627 /* ViewExtend.swift in Sources */,
 				DD7A3ABE26DF6E1500D30627 /* ColorExtend.swift in Sources */,
 				DD7A3AED26E1B12600D30627 /* RegisterController.swift in Sources */,
+				DD7A3B2126E7447200D30627 /* Session.swift in Sources */,
 				DD7A3B1526E5BDA000D30627 /* ListResponse.swift in Sources */,
 				DD7A3AE326E079B100D30627 /* YJHollowPageControl.m in Sources */,
 				DD7A3AB626DF252600D30627 /* Constant.swift in Sources */,

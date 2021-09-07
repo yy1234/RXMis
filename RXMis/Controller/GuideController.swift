@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GuideController: UIViewController {
+class GuideController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
