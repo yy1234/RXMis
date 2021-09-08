@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let nav = UINavigationController.init(rootViewController: ExampleListViewController())
 //        window?.rootViewController = nav
 //        window?.makeKeyAndVisible()
+        
+        initSharedSDK()
         return true
     }
 
@@ -39,6 +41,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = mainStoryBoard.instantiateViewController(identifier: name)
         window?.rootViewController = controller
 
+    }
+    
+    
+    /// 初始化SharedSDK
+    func initSharedSDK() {
+        ShareSDK.registPlatforms { register in
+            //设置微信信息
+//            register?.setupWeChat(withAppId: WECHAT_APP_ID, appSecret: WECHAT_APP_SECRET, universalLink: APP_UNIVERSAL_LINK)
+            
+            //设置QQ信息
+//            register?.setupQQ(withAppId: QQ_APP_ID, appkey: QQ_APP_SECRET)
+            
+            //配置微博
+//            register?.setupSinaWeibo(withAppkey: WEIBO_APP_KEY, appSecret: WEIBO_APP_SECRET, redirectUrl: WEIBO_REDIRECT_URI, universalLink: APP_UNIVERSAL_LINK)
+            
+        }
     }
     //    用户登出
     func onLogout() {

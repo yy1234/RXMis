@@ -54,3 +54,13 @@ let REGX_PHONE="^(0|86|17951)?(13[0-9]|15[012356789]|16[6]|19[89]]|17[01345678]|
 //邮箱正则表达式
 let REGX_EMAIL="^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
 
+
+
+// MARK: - QQ第三方登录，分享
+let QQ_APP_ID = "101481482"
+let QQ_APP_SECRET = "b4304961e7299dde6b7b6964bfbb4a7f"
+
+// MARK: - 新浪微博登录，分享
+let WEIBO_APP_KEY = "1638318172"
+let WEIBO_APP_SECRET = "5e265999bb4eb7c3c1eed34d658e0b0e"
+let WEIBO_REDIRECT_URI = "http://www.ixuea.com"

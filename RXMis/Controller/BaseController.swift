@@ -13,7 +13,7 @@ class BaseController: UIViewController {
     
     //MARK: - 方法
     @objc func injected(){
-//        initViews()
+        initViews()
 
 
     }
