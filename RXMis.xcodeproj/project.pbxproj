@@ -54,6 +54,8 @@
 		DD7A3B2326E7508B00D30627 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2226E7508B00D30627 /* LoginController.swift */; };
 		DD7A3B2526E7769B00D30627 /* BaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */; };
 		DD7A3B2726E777F700D30627 /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2626E777F600D30627 /* BaseCommonController.swift */; };
+		DD7A3B2926E8489900D30627 /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */; };
+		DD7A3B2D26E891A000D30627 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2C26E8919F00D30627 /* CountDown.m */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -158,6 +160,9 @@
 		DD7A3B2226E7508B00D30627 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginController.swift; sourceTree = "<group>"; };
 		DD7A3B2626E777F600D30627 /* BaseCommonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommonController.swift; sourceTree = "<group>"; };
+		DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
+		DD7A3B2B26E8919F00D30627 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
+		DD7A3B2C26E8919F00D30627 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +259,7 @@
 				DD7A3B2226E7508B00D30627 /* LoginController.swift */,
 				DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */,
 				DD7A3B2626E777F600D30627 /* BaseCommonController.swift */,
+				DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 		DD7A3AC926E0797F00D30627 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				DD7A3B2A26E8919F00D30627 /* CountDown */,
 				DD7A3ACA26E079B100D30627 /* YJBannerView */,
 			);
 			path = Vender;
@@ -393,6 +400,15 @@
 				DD7A3B2026E7447200D30627 /* Session.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DD7A3B2A26E8919F00D30627 /* CountDown */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A3B2B26E8919F00D30627 /* CountDown.h */,
+				DD7A3B2C26E8919F00D30627 /* CountDown.m */,
+			);
+			path = CountDown;
 			sourceTree = "<group>";
 		};
 		DDBBACCE26B97727008A7DBB = {
@@ -803,12 +819,14 @@
 				DD7A3AE426E079B100D30627 /* YJAbstractDotView.m in Sources */,
 				DD7A3AF526E20CDE00D30627 /* ToastUtil.swift in Sources */,
 				DD7A3B0826E27DD900D30627 /* Service.swift in Sources */,
+				DD7A3B2D26E891A000D30627 /* CountDown.m in Sources */,
 				DD7A3AAF26DE788E00D30627 /* SplashController.swift in Sources */,
 				DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */,
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
 				DD7A3B0B26E4F97900D30627 /* SheetWraper.swift in Sources */,
 				DD7A3B1B26E6FF1000D30627 /* HttpUtil.swift in Sources */,
+				DD7A3B2926E8489900D30627 /* ForgetPasswordController.swift in Sources */,
 				DD7A3B2526E7769B00D30627 /* BaseLoginController.swift in Sources */,
 				DD7A3AE526E079B100D30627 /* YJAnimatedDotView.m in Sources */,
 				DD7A3AEB26E0BDDC00D30627 /* PreferenceUtil.swift in Sources */,

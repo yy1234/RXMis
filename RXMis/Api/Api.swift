@@ -116,4 +116,49 @@ class Api {
             .mapObject(DetailResponse<Session>.self)
     }
     
+    /// 重置密码
+    ///
+    /// - Parameters:
+    ///   - phone: 手机号
+    ///   - email: 邮箱
+    ///   - code: 验证码
+    ///   - password: 新密码
+    /// - Returns: <#return value description#>
+    func resetPassword(phone:String?,email:String?,code:String,password:String) -> Observable<DetailResponse<BaseModel>?> {
+        return provider
+            .rx
+            .request(.resetPassword(phone: phone, email: email, code: code, password: password))
+            .filterSuccessfulStatusCodes()
+            .mapString()
+            .asObservable()
+            .mapObject(DetailResponse<BaseModel>.self)
+    }
+    /// 发送验证码
+    ///
+    /// - Parameter phone: <#phone description#>
+    /// - Returns: <#return value description#>
+    func sendSMSCode(phone:String) -> Observable<DetailResponse<BaseModel>?> {
+        return provider
+            .rx
+            .request(.sendSMSCode(phone: phone))
+            .filterSuccessfulStatusCodes()
+            .mapString()
+            .asObservable()
+            .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    /// 发送邮件验证码
+    ///
+    /// - Parameter email: <#email description#>
+    /// - Returns: <#return value description#>
+    func sendEmailCode(email:String) -> Observable<DetailResponse<BaseModel>?> {
+        return provider
+            .rx
+            .request(.sendEmailCode(email: email))
+            .filterSuccessfulStatusCodes()
+            .mapString()
+            .asObservable()
+            .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
 }
