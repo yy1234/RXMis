@@ -58,6 +58,7 @@
 		DD7A3B2D26E891A000D30627 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2C26E8919F00D30627 /* CountDown.m */; };
 		DD7A3B2F26E8C76D00D30627 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */; };
 		DD7A3B3126E8F0BB00D30627 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B3026E8F0BB00D30627 /* AccountController.swift */; };
+		DD7A3B3326E9B9BD00D30627 /* AdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B3226E9B9BC00D30627 /* AdController.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -167,6 +168,7 @@
 		DD7A3B2C26E8919F00D30627 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
 		DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
 		DD7A3B3026E8F0BB00D30627 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		DD7A3B3226E9B9BC00D30627 /* AdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdController.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */,
 				DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */,
 				DD7A3B3026E8F0BB00D30627 /* AccountController.swift */,
+				DD7A3B3226E9B9BC00D30627 /* AdController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -830,6 +833,7 @@
 				DD7A3B2F26E8C76D00D30627 /* DiscoveryController.swift in Sources */,
 				DD7A3AAF26DE788E00D30627 /* SplashController.swift in Sources */,
 				DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */,
+				DD7A3B3326E9B9BD00D30627 /* AdController.swift in Sources */,
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,
 				DD7A3AC426E0711B00D30627 /* HomeController.swift in Sources */,
 				DD7A3B0B26E4F97900D30627 /* SheetWraper.swift in Sources */,

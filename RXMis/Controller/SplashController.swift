@@ -23,7 +23,12 @@ class SplashController: BaseController {
         if PreferenceUtil.isShowGuide() {
             AppDelegate.sharde.toGuide()
         }else if(PreferenceUtil.isLogin()){
-            AppDelegate.sharde.toHome()
+            //已经登陆了
+             //就显示广告⻚面;在广告⻚面再进入主界面
+             //可以根据自己的需求来更改
+             //同时只有用户登陆了
+             //才显示也给用户有更好的体验
+            AppDelegate.sharde.toAdd()
         }else{
             AppDelegate.sharde.toLoginOrRegister()
         }

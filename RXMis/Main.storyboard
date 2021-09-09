@@ -831,6 +831,21 @@
             </objects>
             <point key="canvasLocation" x="2008.6956521739132" y="514.95535714285711"/>
         </scene>
+        <!--Ad Controller-->
+        <scene sceneID="7QX-La-gPj">
+            <objects>
+                <viewController storyboardIdentifier="Ad" id="42H-3j-6ix" customClass="AdController" customModule="RXMis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMf-O2-fnv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AtD-Te-xZ5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxY-Pl-zVS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="1601"/>
+        </scene>
         <!--发现-->
         <scene sceneID="hrp-6x-Dpd">
             <objects>

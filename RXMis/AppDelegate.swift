@@ -84,6 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
     }
+    func toAdd()  {
+        setRootController(name: "Ad")
+
+    }
     //用户登入
     func onLogin(_ data: Session) {
 //        保存用户信息
