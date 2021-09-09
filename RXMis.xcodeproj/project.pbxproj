@@ -56,6 +56,8 @@
 		DD7A3B2726E777F700D30627 /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2626E777F600D30627 /* BaseCommonController.swift */; };
 		DD7A3B2926E8489900D30627 /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */; };
 		DD7A3B2D26E891A000D30627 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2C26E8919F00D30627 /* CountDown.m */; };
+		DD7A3B2F26E8C76D00D30627 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */; };
+		DD7A3B3126E8F0BB00D30627 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3B3026E8F0BB00D30627 /* AccountController.swift */; };
 		DDBBACDB26B97727008A7DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDA26B97727008A7DBB /* AppDelegate.swift */; };
 		DDBBACDF26B97727008A7DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBACDE26B97727008A7DBB /* ViewController.swift */; };
 		DDBBACE426B9772B008A7DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBBACE326B9772B008A7DBB /* Assets.xcassets */; };
@@ -163,6 +165,8 @@
 		DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
 		DD7A3B2B26E8919F00D30627 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
 		DD7A3B2C26E8919F00D30627 /* CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
+		DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
+		DD7A3B3026E8F0BB00D30627 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		DDBBACD726B97727008A7DBB /* RXMis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXMis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBACDA26B97727008A7DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBBACDE26B97727008A7DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 				DD7A3B2426E7769B00D30627 /* BaseLoginController.swift */,
 				DD7A3B2626E777F600D30627 /* BaseCommonController.swift */,
 				DD7A3B2826E8489900D30627 /* ForgetPasswordController.swift */,
+				DD7A3B2E26E8C76C00D30627 /* DiscoveryController.swift */,
+				DD7A3B3026E8F0BB00D30627 /* AccountController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -818,8 +824,10 @@
 				DD7A3AE126E079B100D30627 /* UIView+YJBannerViewExt.m in Sources */,
 				DD7A3AE426E079B100D30627 /* YJAbstractDotView.m in Sources */,
 				DD7A3AF526E20CDE00D30627 /* ToastUtil.swift in Sources */,
+				DD7A3B3126E8F0BB00D30627 /* AccountController.swift in Sources */,
 				DD7A3B0826E27DD900D30627 /* Service.swift in Sources */,
 				DD7A3B2D26E891A000D30627 /* CountDown.m in Sources */,
+				DD7A3B2F26E8C76D00D30627 /* DiscoveryController.swift in Sources */,
 				DD7A3AAF26DE788E00D30627 /* SplashController.swift in Sources */,
 				DD7A3AE226E079B100D30627 /* YJBannerView.m in Sources */,
 				DD7A3AC226E0655200D30627 /* LoginOrRegisterController.swift in Sources */,

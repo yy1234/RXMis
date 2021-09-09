@@ -1,21 +1,25 @@
 //
-//  HomeController.swift
+//  AccountController.swift
 //  RXMis
 //
-//  Created by 杨洋 on 2021/9/2.
+//  Created by 杨洋 on 2021/9/8.
 //
 
 import UIKit
 
-class HomeController: UITabBarController {
+class AccountController: BaseCommonController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = UIColor(hex: COLOR_PRIMARY)
-        // Do any additional setup after loading the view.
+
+        // Do any additional setup af ter loading the view.
     }
     
-
+    @IBAction func onLayoutClick(_ sender: UIButton) {
+        AppDelegate.sharde.logout()
+        
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -1,17 +1,17 @@
 //
-//  HomeController.swift
+//  DiscoveryController.swift
 //  RXMis
 //
-//  Created by 杨洋 on 2021/9/2.
+//  Created by 杨洋 on 2021/9/8.
 //
 
 import UIKit
 
-class HomeController: UITabBarController {
+class DiscoveryController: BaseCommonController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = UIColor(hex: COLOR_PRIMARY)
+
         // Do any additional setup after loading the view.
     }
     

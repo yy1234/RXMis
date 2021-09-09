@@ -7,6 +7,14 @@
 
 import Foundation
 class PreferenceUtil {
+    
+    static func logout() {
+        //清除用户Id
+        UserDefaults.standard.removeObject(forKey: KEY_USER_ID)
+        
+        //清除用户登录标识
+        UserDefaults.standard.removeObject(forKey: KEY_USER_TOKEN)
+    }
     // 是否显示引导界面常量字符串
     static let KEY_GUIDE = "KEY_GUIDE"
     /// 用户Id常量key
