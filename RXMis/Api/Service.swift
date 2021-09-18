@@ -23,7 +23,7 @@ enum Service {
     case resetPassword(phone:String?,email:String?,code:String,password:String)
     case sendSMSCode(phone:String)
     case sendEmailCode(email:String)
-
+    case ads
 }
 
 extension Service: TargetType {
@@ -48,8 +48,8 @@ extension Service: TargetType {
             return "/v1/codes/request_sms_code"
         case .sendEmailCode:
             return "/v1/codes/request_email_code"
-        default:
-            return ""
+        case .ads:
+            return "/v1/ads"
         }
     }
 //    方法

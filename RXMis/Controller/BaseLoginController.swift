@@ -7,13 +7,21 @@
 
 import UIKit
 
-class BaseLoginController: BaseCommonController {
+class BaseLoginController: BaseTitleController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
 
     }
+    override func initViews() {
+        
+    }
+    
+    override func hideNavigationBar() -> Bool {
+        return true
+    }
+    
     
     /// 登录
     ///
@@ -30,7 +38,7 @@ class BaseLoginController: BaseCommonController {
                 print("RegisterController onRegisterClick login success:\(data.user)")
 
                 //把登录成功的事件通知到AppDelegate
-                AppDelegate.sharde.onLogin(data)
+                AppDelegate.shared.onLogin(data)
             }
             }.disposed(by: disposeBag)
     }

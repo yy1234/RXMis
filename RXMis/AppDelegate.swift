@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
     //定义一个静态的计算的属性
     //返回AppDelegate对象实例,有class就是计算的静态属性，没有的话，就是实例属性
-    open class var sharde : AppDelegate{
+    open class var shared : AppDelegate{
         get {
             return UIApplication.shared.delegate as!AppDelegate
         }
@@ -84,6 +84,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
     }
+    
+    func onLogout() {
+
+        
+    }
     func toAdd()  {
         setRootController(name: "Ad")
 
@@ -115,7 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-    func toHome() {
+    func toHome(_ uri:String?=nil) {
         //获取到main.storyBoard
 //        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
 //
@@ -124,7 +129,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = homeViewController
         
         setRootController(name: "Home")
-
+        if let adUri = uri {
+            //如果有广告地址
+            //才发送一个通知
+            
+            //为什么要发送通知呢？
+            //其实是因为我们在AppDelegate中
+            //不太好拿到发现界面控制器
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: AD_CLICK), object: nil, userInfo: ["uri":adUri])
+            }
+        }
     }
 }
 
+// MARK: - 启动界面
+extension WebController {
+    
+    /// 启动界面
+    ///
+    /// - Parameters:
+    ///   - navigationController: 导航控制器
+    ///   - title: 显示的标题
+    ///   - uri: 显示的网址
+    static func start(_ navigationController:UINavigationController, _ title:String,_ uri:String) {
+        //创建控制器
+        let controller = navigationController.storyboard?.instantiateViewController(withIdentifier: "Web") as! WebController
+        
+        //传递参数
+        controller.title=title
+        controller.uri=uri
+        
+        //将控制器压入导航控制器中
+        navigationController.pushViewController(controller, animated: true)
+    }
+}

@@ -13,7 +13,7 @@ class ToastUtil {
     
     //短的文字提示
     static func short(_ messsage: String){
-        let hud = MBProgressHUD.showAdded(to: (AppDelegate.sharde.window?.rootViewController!.view)!, animated: true)
+        let hud = MBProgressHUD.showAdded(to: (AppDelegate.shared.window?.rootViewController!.view)!, animated: true)
         //只显示文字
         hud.mode = .text
         
@@ -38,7 +38,7 @@ class ToastUtil {
             }
             
             //创建一个MBProgressHUD
-            hud=MBProgressHUD.showAdded(to: AppDelegate.sharde.window!.rootViewController!.view, animated: true)
+            hud=MBProgressHUD.showAdded(to: AppDelegate.shared.window!.rootViewController!.view, animated: true)
             
             //设置菊花颜色
             hud!.activityIndicatorColor=UIColor.white

@@ -10,3 +10,5 @@
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKUI/ShareSDK+SSUI.h>
 #import "CountDown.h"
+//图片加载框架
+#import "SDWebImage/UIImageView+WebCache.h"

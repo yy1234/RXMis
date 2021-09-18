@@ -16,21 +16,22 @@ class SplashController: BaseController {
         }
     }
     
+    
     func next()  {
         print("SplashController next")
 //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //        appDelegate.toGuide()
         if PreferenceUtil.isShowGuide() {
-            AppDelegate.sharde.toGuide()
+            AppDelegate.shared.toGuide()
         }else if(PreferenceUtil.isLogin()){
             //已经登陆了
              //就显示广告⻚面;在广告⻚面再进入主界面
              //可以根据自己的需求来更改
              //同时只有用户登陆了
              //才显示也给用户有更好的体验
-            AppDelegate.sharde.toAdd()
+            AppDelegate.shared.toAdd()
         }else{
-            AppDelegate.sharde.toLoginOrRegister()
+            AppDelegate.shared.toLoginOrRegister()
         }
     }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginOrRegisterController: BaseController {
+class LoginOrRegisterController: BaseTitleController {
     //MARK: - 声明
     @IBOutlet weak var btLogin: UIButton!
     @IBOutlet weak var btRegister: UIButton!
@@ -17,6 +17,11 @@ class LoginOrRegisterController: BaseController {
         super.viewDidLoad()
 
     }
+    
+    override func hideNavigationBar() -> Bool {
+        return true
+    }
+    
     
     override func initViews() {
         super.initViews()

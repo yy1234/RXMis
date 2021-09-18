@@ -16,7 +16,7 @@ class AccountController: BaseCommonController {
     }
     
     @IBAction func onLayoutClick(_ sender: UIButton) {
-        AppDelegate.sharde.logout()
+        AppDelegate.shared.logout()
         
     }
     

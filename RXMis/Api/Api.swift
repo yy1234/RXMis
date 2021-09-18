@@ -160,5 +160,16 @@ class Api {
             .asObservable()
             .mapObject(DetailResponse<BaseModel>.self)
     }
+    /// 广告列表
+    ///
+    /// - Returns: <#return value description#>
+    func ads() -> Observable<ListResponse<Ad>?> {
+        return provider
+            .rx
+            .request(.ads)
+            .filterSuccessfulStatusCodes()
+            .mapString().asObservable()
+            .mapObject(ListResponse<Ad>.self)
+    }
     
 }

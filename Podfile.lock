@@ -31,6 +31,9 @@ PODS:
     - RxSwift (~> 5.0)
   - Reveal-SDK (24)
   - RxSwift (5.0.0)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
   - SnapKit (5.0.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -49,6 +52,7 @@ DEPENDENCIES:
   - Moya/RxSwift (= 14.0.0)
   - Reveal-SDK (~> 24)
   - RxSwift (= 5)
+  - SDWebImage (= 4.4.7)
   - SnapKit (~> 5.0.0)
   - YogaKit (~> 1.18.1)
 
@@ -62,6 +66,7 @@ SPEC REPOS:
     - Moya
     - Reveal-SDK
     - RxSwift
+    - SDWebImage
     - SnapKit
     - Yoga
     - YogaKit
@@ -80,10 +85,11 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 062c9b275dcb7ed3d492f072272bd2e045781a93
+PODFILE CHECKSUM: b18e841759764d1c1bf1c54f51ad567ce285faa3
 
 COCOAPODS: 1.10.0

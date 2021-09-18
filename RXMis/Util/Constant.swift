@@ -12,8 +12,10 @@ import Foundation
 //let ENDPOINT="http://dev-my-cloud-music-api-rails.ixuea.com"
 
 /// SpringBoot课程API地址
-let ENDPOINT="http://my-cloud-music-api-sp-dev.ixuea.com"
+let ENDPOINT = "http://my-cloud-music-api-sp-dev.ixuea.com"
 
+/// 资源接口地址
+let RESOURCE_ENDPOINT = "http://dev-courses-misuc.ixuea.com"
 /// 是否是调试模式
 let DEBUG = true
 
@@ -25,7 +27,8 @@ let SIZE_BUTTON_ENTER_HEIGTH = 44.0
 
 //大圆角的半径
 let SIZR_LARGER_RADIUS = SIZE_BUTTON_ENTER_HEIGTH / 2
-
+//小圆角
+let SIZE_SMALL_RADIUS = 5
 //边框的宽度
 let SIZE_BORDER = 1.0
 
@@ -64,3 +67,8 @@ let QQ_APP_SECRET = "b4304961e7299dde6b7b6964bfbb4a7f"
 let WEIBO_APP_KEY = "1638318172"
 let WEIBO_APP_SECRET = "5e265999bb4eb7c3c1eed34d658e0b0e"
 let WEIBO_REDIRECT_URI = "http://www.ixuea.com"
+
+
+
+/// 广告点击了发送的事件
+let AD_CLICK = "AD_CLICK"

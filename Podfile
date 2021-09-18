@@ -87,6 +87,10 @@ target 'RXMis' do
   # 扩展模块（在调用可以弹出我们UI分享方法的时候是必需的）
   pod 'mob_sharesdk/ShareSDKExtension','4.3.16'
   #end share SDK
+  
+  #图片加载
+  pod 'SDWebImage', '4.4.7'
+  
   target 'RXMisTests' do
     inherit! :search_paths
     # Pods for testing

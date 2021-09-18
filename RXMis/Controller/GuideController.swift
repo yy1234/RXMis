@@ -66,7 +66,7 @@ class GuideController: BaseController {
 //MARK:事件
     @IBAction func onLoginOrRegisterClick(_ sender: UIButton) {
         print("GuideController onLoginOrRegisterClick")
-        AppDelegate.sharde.toLoginOrRegister()
+        AppDelegate.shared.toLoginOrRegister()
         setShowGuide()
 
     }
@@ -75,7 +75,7 @@ class GuideController: BaseController {
     
     @IBAction func onEnterClick(_ sender: UIButton) {
         print("GuideController onEnterClick")
-        AppDelegate.sharde.toHome()
+        AppDelegate.shared.toHome()
         setShowGuide()
     }
     

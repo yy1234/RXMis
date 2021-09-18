@@ -35,7 +35,7 @@ class HttpUtil {
                 switch code {
                 case 401:
                     //表示要登录
-                    AppDelegate.sharde.onLogout()
+                    AppDelegate.shared.onLogout()
                     
                     //弹出提示
                     ToastUtil.short("登录信息过期，请重新登录！")
