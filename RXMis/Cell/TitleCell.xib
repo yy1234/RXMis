@@ -18,8 +18,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-XV-4KV">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-XV-4KV">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -28,12 +29,6 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" name="PrimaryColor"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="ZNw-XV-4KV" secondAttribute="bottom" id="0C3-ix-6vj"/>
-                <constraint firstAttribute="trailing" secondItem="ZNw-XV-4KV" secondAttribute="trailing" id="evg-hZ-zGV"/>
-                <constraint firstItem="ZNw-XV-4KV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h0k-gd-5Yx"/>
-                <constraint firstItem="ZNw-XV-4KV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kyD-Ea-XOe"/>
-            </constraints>
             <size key="customSize" width="250" height="48"/>
             <connections>
                 <outlet property="lbTitle" destination="ZNw-XV-4KV" id="s0l-ia-TfN"/>
