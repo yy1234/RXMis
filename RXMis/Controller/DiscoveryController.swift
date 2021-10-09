@@ -31,6 +31,9 @@ class DiscoveryController: BaseCommonController {
         collectionView.register(sheetCell.self, forCellWithReuseIdentifier: SheetCell.NAME)
         //注册头部
         collectionView.register(UINib(nibName: DiscoveryHeaderView.NAME, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: DiscoveryHeaderView.NAME)
+        if DEBUG {
+            collectionView.reloadData()
+        }
         
     }
     
@@ -55,7 +58,16 @@ class DiscoveryController: BaseCommonController {
         }
         dataArray.append("这是标题8")
 
-        collectionView.reloadData()
+        dataArray.removeAll()
+        
+        
+        Api.shared.sheets().subscribeOnSuccess { data in
+            if let data1 = data?.data?.data {
+                self.dataArray.append("推荐歌单")
+                self.dataArray = self.dataArray + data1
+                self.collectionView.reloadData()
+            }
+        }.disposed(by: disposeBag)
     }
     
     //获取轮播图数据
@@ -158,7 +170,7 @@ extension DiscoveryController:UICollectionViewDelegate,UICollectionViewDataSourc
             //歌单
             let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: SheetCell.NAME, for: indexPath) as! SheetCell
             let data = dataArray[indexPath.row]
-//            cell.bindData(data as! String)
+            cell.bindData(data as! Sheet)
             return cell
         default:
             //默认是标题
@@ -228,7 +240,7 @@ extension DiscoveryController: UICollectionViewDelegateFlowLayout{
     ///   - indexPath: <#indexPath description#>
     /// - Returns: <#return value description#>
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewWidth=self.collectionView.frame.width
+        let collectionViewWidth = self.collectionView.frame.width
         //除以3，因为要显示3列
         //获取当前位置对应的数据
         let data = dataArray[indexPath.row]
@@ -242,11 +254,11 @@ extension DiscoveryController: UICollectionViewDelegateFlowLayout{
         case .sheet:
             //歌单
             //3列
-            width=(collectionViewWidth - SIZE_LARGE_DIVIDER*2)/3
+            width=(collectionViewWidth - SIZE_LARGE_DIVIDER * 2) / 3
             
             //计算高度
-            height=width + SIZE_LARGE_DIVIDER + SIZE_TITLE_HEIGHT + SIZE_LARGE_DIVIDER
-            
+            height = width + SIZE_LARGE_DIVIDER + SIZE_TITLE_HEIGHT + SIZE_LARGE_DIVIDER
+
         case .song:
             //单曲
             width = collectionViewWidth
@@ -259,7 +271,7 @@ extension DiscoveryController: UICollectionViewDelegateFlowLayout{
             height = SIZE_TITLE_HEIGHT
         }
 
-        return CGSize(width: collectionViewWidth, height: height)
+        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
