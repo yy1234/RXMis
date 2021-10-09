@@ -86,6 +86,8 @@
 		DDBBAD4326B97B26008A7DBB /* InternalTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DDBBAD3F26B97B25008A7DBB /* InternalTarget.xcconfig */; };
 		DDBBAD4426B97B26008A7DBB /* DebugTarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DDBBAD4026B97B25008A7DBB /* DebugTarget.xcconfig */; };
 		DDBC088C26F5B70700BE2151 /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC088B26F5B70600BE2151 /* BaseCollectionReusableView.swift */; };
+		DDBC089026F8762B00BE2151 /* SheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC088E26F8762B00BE2151 /* SheetCell.swift */; };
+		DDBC089126F8762B00BE2151 /* SheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBC088F26F8762B00BE2151 /* SheetCell.xib */; };
 		DDF33D7D26CA943C00B3DB19 /* ExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF33D7C26CA943C00B3DB19 /* ExampleListViewController.swift */; };
 		E53E7CED230AF5DB2056727C /* Pods_RXMisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2657D6C6A4A130621404E52E /* Pods_RXMisTests.framework */; };
 /* End PBXBuildFile section */
@@ -212,6 +214,8 @@
 		DDBBAD3F26B97B25008A7DBB /* InternalTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = InternalTarget.xcconfig; sourceTree = "<group>"; };
 		DDBBAD4026B97B25008A7DBB /* DebugTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugTarget.xcconfig; sourceTree = "<group>"; };
 		DDBC088B26F5B70600BE2151 /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		DDBC088E26F8762B00BE2151 /* SheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCell.swift; sourceTree = "<group>"; };
+		DDBC088F26F8762B00BE2151 /* SheetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetCell.xib; sourceTree = "<group>"; };
 		DDF33D7C26CA943C00B3DB19 /* ExampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListViewController.swift; sourceTree = "<group>"; };
 		E6AFF4F30A6A52C48CA61DBD /* Pods-RXMis-RXMisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXMis-RXMisUITests.debug.xcconfig"; path = "Target Support Files/Pods-RXMis-RXMisUITests/Pods-RXMis-RXMisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -457,6 +461,8 @@
 			children = (
 				DD7A3B3C26EAF1D300D30627 /* TitleCell.swift */,
 				DD7A3B3D26EAF1D300D30627 /* TitleCell.xib */,
+				DDBC088E26F8762B00BE2151 /* SheetCell.swift */,
+				DDBC088F26F8762B00BE2151 /* SheetCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -714,6 +720,7 @@
 				DD7A3B4326EB485000D30627 /* DiscoveryHeaderView.xib in Resources */,
 				DDBBAD3A26B97B18008A7DBB /* BaseProject.xcconfig in Resources */,
 				DDBBAD4326B97B26008A7DBB /* InternalTarget.xcconfig in Resources */,
+				DDBC089126F8762B00BE2151 /* SheetCell.xib in Resources */,
 				DDBBAD3326B97B09008A7DBB /* BaseConfigurations.xcconfig in Resources */,
 				DD7A3AAC26DE682000D30627 /* Main.storyboard in Resources */,
 			);
@@ -930,6 +937,7 @@
 				DD7A3AEF26E1CCFE00D30627 /* TextFieldzExtend.swift in Sources */,
 				DD7A3B1926E6547B00D30627 /* Meta.swift in Sources */,
 				DD7A3AE826E079B100D30627 /* YJBannerViewCell.m in Sources */,
+				DDBC089026F8762B00BE2151 /* SheetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

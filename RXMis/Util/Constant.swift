@@ -19,6 +19,14 @@ let RESOURCE_ENDPOINT = "http://dev-courses-misuc.ixuea.com"
 /// 是否是调试模式
 let DEBUG = true
 
+
+/// 大分割线
+let SIZE_LARGE_DIVIDER:CGFloat = 10
+
+/// 发现界面；Cell标题高度
+let SIZE_TITLE_HEIGHT:CGFloat = 40
+
+
 //MARK:尺寸
 //立即体验按钮的宽度
 let SIZE_BUTTON_ENTER_WIDTH = 130.0

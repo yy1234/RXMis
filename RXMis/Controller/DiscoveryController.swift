@@ -12,7 +12,7 @@ class DiscoveryController: BaseCommonController {
     /// 当前界面头部布局
     var header: DiscoveryHeaderView!
     var bannerArray: [Ad] = []
-    var dataArry: [Any] = []
+    var dataArray: [Any] = []
     
     
     override func viewDidLoad() {
@@ -26,6 +26,9 @@ class DiscoveryController: BaseCommonController {
         //创建一个Nib
         let titleCell = UINib(nibName: TitleCell.NAME, bundle: nil)
         collectionView.register(titleCell.self, forCellWithReuseIdentifier: TitleCell.NAME)
+        //创建一个歌单Nib
+        let sheetCell = UINib(nibName: SheetCell.NAME, bundle: nil)
+        collectionView.register(sheetCell.self, forCellWithReuseIdentifier: SheetCell.NAME)
         //注册头部
         collectionView.register(UINib(nibName: DiscoveryHeaderView.NAME, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: DiscoveryHeaderView.NAME)
         
@@ -44,15 +47,14 @@ class DiscoveryController: BaseCommonController {
     
     //加载首页数据
     func fechData() {
-        dataArry.append("这是标题1")
-        dataArry.append("这是标题2")
-        dataArry.append("这是标题3")
-        dataArry.append("这是标题4")
-        dataArry.append("这是标题5")
-        dataArry.append("这是标题6")
-        dataArry.append("这是标题7")
-        dataArry.append("这是标题8")
-        dataArry.append("这是标题9")
+        dataArray.append("这是标题1")
+        for i in 1...10 {
+        let sheet = Sheet()
+            sheet.title = "这是歌单\(i)，标题很⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓⻓"
+            dataArray.append(sheet)
+        }
+        dataArray.append("这是标题8")
+
         collectionView.reloadData()
     }
     
@@ -72,6 +74,7 @@ class DiscoveryController: BaseCommonController {
     }
     
     
+    
     @objc func onAdClick(notification:NSNotification) {
         
         let uri = notification.userInfo!["uri"] as! String
@@ -87,6 +90,41 @@ class DiscoveryController: BaseCommonController {
         WebController.start(self.navigationController!, "活动详情", uri)
         
     }
+    /// 获取列表类型
+    ///
+    /// - Parameter data: <#data description#>
+    /// - Returns: <#return value description#>
+    func typeForItemAtData(_ data:Any) -> CellType {
+        if data is Sheet {
+            //歌单
+            return .sheet
+        }
+//        else if  data is Song {
+//            //单曲
+//            return .song
+//        }
+        
+        //标题
+        return .title
+    }
+    
+    /// Cell类型
+    /// 他是一个枚举
+    /// 以后也可以重构
+    /// 就是项目中所有的类型都用他
+    ///
+    /// - title: 标题
+    /// - sheet: 歌单
+    /// - song: 单曲
+    enum CellType {
+        case title
+        
+        case sheet
+        
+        case song
+    }
+    
+    
 
     /*
     // MARK: - Navigation
@@ -101,16 +139,35 @@ class DiscoveryController: BaseCommonController {
 }
 
 extension DiscoveryController:UICollectionViewDelegate,UICollectionViewDataSource {
+    /// 返回有多个条目
+    ///
+    /// - Parameters:
+    ///   - collectionView: <#collectionView description#>
+    ///   - section: <#section description#>
+    /// - Returns: <#return value description#>
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArry.count
-
+        return dataArray.count
     }
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCell.NAME, for: indexPath) as! TitleCell
-        let data = dataArry[indexPath.row]
-        cell.bindData(data as! String)
-        return cell
+        let data = dataArray[indexPath.row]
+        let type = typeForItemAtData(data)
+        switch type {
+        case .sheet:
+            //歌单
+            let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: SheetCell.NAME, for: indexPath) as! SheetCell
+            let data = dataArray[indexPath.row]
+//            cell.bindData(data as! String)
+            return cell
+        default:
+            //默认是标题
+            let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCell.NAME, for: indexPath) as! TitleCell
+            let data = dataArray[indexPath.row]
+            cell.bindData(data as! String)
+            return cell
+
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -173,9 +230,36 @@ extension DiscoveryController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth=self.collectionView.frame.width
         //除以3，因为要显示3列
-        //每列就是总宽度/3
-        let width=(collectionViewWidth-10*2)/3
-        return CGSize(width: collectionViewWidth, height: width)
+        //获取当前位置对应的数据
+        let data = dataArray[indexPath.row]
+        let type = typeForItemAtData(data)
+
+        //最终的宽高
+        var width: CGFloat!
+        var height: CGFloat!
+        
+        switch type {
+        case .sheet:
+            //歌单
+            //3列
+            width=(collectionViewWidth - SIZE_LARGE_DIVIDER*2)/3
+            
+            //计算高度
+            height=width + SIZE_LARGE_DIVIDER + SIZE_TITLE_HEIGHT + SIZE_LARGE_DIVIDER
+            
+        case .song:
+            //单曲
+            width = collectionViewWidth
+            
+            //5+110(图片高度)+5
+            height = 110
+        default:
+            //标题
+            width=collectionViewWidth
+            height = SIZE_TITLE_HEIGHT
+        }
+
+        return CGSize(width: collectionViewWidth, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
