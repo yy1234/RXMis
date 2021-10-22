@@ -1,0 +1,7 @@
+only_rules:
+  - comma
+  - empty_count #建议使用isEmpty判断,而不是使用count==0判断
+#排除
+excluded:
+  - Pods
+#  - "./Frameworks/DesignKit/Example"

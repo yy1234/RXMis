@@ -1,0 +1,68 @@
+# 先定义好全局变量
+SCHEME = "RXMis"
+WORKSPACE = "RXMis.xcworkspace"
+XCODEPROJ = "RXMis.xcodeproj"
+BundleId = "com.sinieco.cpmis"
+dingding_token = "XX" #电脑端钉钉建群群助手添加机器人webhook设置好获取token即可 发消息得带tag不然可能失败
+keychain_name = "XinYeKeychain"
+keychain_password = "123456"
+keychain_name_db = "XinYeKeychain-db"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+
+
+  desc "Build development app"
+
+  lane :build_dev_app do
+
+  puts("Build development app")
+
+  unlock_keychain(
+    path: keychain_name_db,
+    password: keychain_password)
+   
+   update_code_signing_settings(
+    use_automatic_signing: false,
+    path: "RXMis.xcodeproj",
+    code_sign_identity: "iPhone Distribution",
+    bundle_identifier: BundleId,
+    profile_name: "cpmis_release")
+  puts("Create an archive for Internal testing")
+  
+  gym(scheme: SCHEME,
+
+    workspace: WORKSPACE,
+
+    export_method: "app-store",
+
+    configuration: "Debug",
+    
+    output_directory: ".ipa/#{SCHEME}",
+
+    xcargs: "-allowProvisioningUpdates")
+    
+    update_code_signing_settings(
+    use_automatic_signing: false,
+    path: "RXMis.xcodeproj"
+  )
+  
+      #上传到 firebase
+    firebase_app_distribution(
+      app: "1:195194034394:ios:5af53a936987df1d69ade3",
+      ipa_path: ".ipa/#{SCHEME}/RXMis.ipa",
+      #groups: "internal-testers",
+      release_notes: "A new build for the Internal App",
+      firebase_cli_token: "1//0e4Z8UjioY4WMCgYIARAAGA4SNwF-L9IrxrBNYFfXo4grCegVThqHEZSY6-k6EMhbtWc-NsQ5TBKBeZ_62anrwXsFkpex3zv27Ms"
+  )
+
+   end
+    
+  
+	
+end
